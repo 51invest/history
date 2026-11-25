@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>泡沫危机比较阅读 · 巫妖投资</title><meta name="description" content="比较 1929 与 2008 两次危机，先重建当时信息，再比较机制、制度、政策和结果，而不是只比较跌幅。"><link rel="canonical" href="https://history.51invest.com/learn/bubbles-and-crises-comparison/"><link rel="alternate" hreflang="zh-CN" href="https://history.51invest.com/learn/bubbles-and-crises-comparison/"><link rel="alternate" hreflang="en" href="https://history.51invest.com/en/learn/bubbles-and-crises-comparison/"><link rel="alternate" hreflang="x-default" href="https://history.51invest.com/learn/bubbles-and-crises-comparison/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link" href="https://economics.51invest.com/"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link active" href="/" aria-current="page"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/bubbles-and-crises-comparison/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济与金融史</a> <span class="sep">/</span> <span aria-current="page">泡沫危机比较阅读</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">案例</span> <h1 class="article-title">泡沫危机比较阅读</h1> <p class="article-summary">比较 1929 与 2008 两次危机，先重建当时信息，再比较机制、制度、政策和结果，而不是只比较跌幅。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>HIS-M16 · 泡沫危机与事件</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>13 分钟 · 13 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-history"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <blockquote>
+<p>读完这一篇，你能用一组可疑信号判断“像不像泡沫”，再用替代解释表检查自己有没有把“事后看到崩溃”误当成“当时就能确定这是泡沫”。</p>
+</blockquote>
+<h2>背景</h2>
+<p>1929 年股市崩盘和 2008 年全球金融危机常被并列讨论。两次事件都伴随资产价格大幅下跌、金融压力和政策反应，但制度、政策工具、全球联系和数据条件不同。本文把它们作为比较案例，示范如何提出机制问题、区分可得信息与事后结果，并说明案例比较不能证明什么。本文不判断哪一次危机“更像”当前，也不把两次事件的原因归结为单一因素。</p>
+<h2>当时可获得的信息</h2>
+<p>1929 年的决策者面对的是有限的实时数据、较慢的信息传递和不同的货币政策框架；市场下跌、银行压力和黄金约束如何相互作用，并不是事后叙述中那样一目了然。2008 年的数据更丰富，但金融结构更复杂、全球联系更强，监管者和市场参与者同样面对不确定性和信息滞后。比较时必须区分“当时可以看到什么”和“事后才知道什么”；否则会把结果误当成可预测性[3]。本段关于实时数据、信息传递、金融结构与全球联系的概括属本文表述，登记来源支撑的是其中的金本位传导句[1]、GDP 降幅与政策工具句[2]以及结果偏差效应[3]。</p>
+<h2>机制与结果</h2>
+<table>
+<thead>
+<tr>
+<th>维度</th>
+<th>定义</th>
+<th>1929 年（崩盘及其后）</th>
+<th>2008 年（衰退期 2007 年 12 月至 2009 年 6 月）</th>
+<th>来源</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>市场</td>
+<td>资产价格与金融压力的表现；1929 列只给指数点位，不是总市值</td>
+<td>崩盘：10 月 28 日道指跌近 13%，次日再跌近 12%，到 11 月中旬点位已失去近一半价值[1]</td>
+<td>全球金融市场压力，风险资产大幅下跌</td>
+<td>1929 列［1］；2008 列为本文表述（未对源）</td>
+</tr>
+<tr>
+<td>经济</td>
+<td>产出变化的幅度与扩散范围</td>
+<td>随后出现严重衰退与全球扩散：该页写明紧缩政策把世界多个经济体推入衰退，道指跌势延续到 1932 年夏、收于 41.22[1]</td>
+<td>2007 年 12 月至 2009 年 6 月衰退，美国实际 GDP 下降约 4.3%</td>
+<td>1929 列［1］；2008 列［2］</td>
+</tr>
+<tr>
+<td>政策</td>
+<td>央行行动及其在当时的制度约束下产生的后果</td>
+<td>美联储行动与金本位等因素产生非预期全球影响[1]</td>
+<td>美联储将利率降至零，使用前瞻指引和资产购买[2]</td>
+<td>［1］；［2］</td>
+</tr>
+<tr>
+<td>制度</td>
+<td>货币、监管与金融结构的差别</td>
+<td>当时的金本位、银行体系和政策框架</td>
+<td>不同的监管、央行工具和全球金融结构</td>
+<td>1929 列的金本位部分见［1］，银行体系与政策框架为本文表述；2008 列的央行工具部分见［2］，监管与全球结构为本文表述</td>
+</tr>
+</tbody></table>
+<p>两列口径不同：1929 列给的是道琼斯指数点位与其变化（来源原话 “By mid-November, the Dow had lost almost half of its value”，另有 “On Black Monday, October 28, 1929, the Dow declined nearly 13 percent”、“On the following day, Black Tuesday, the market dropped nearly 12 percent” 与 “the summer of 1932, when the Dow closed at 41.22”），不是总市值；2008 列的约 4.3% 指美国实际 GDP 在 2007 年 12 月至 2009 年 6 月衰退期内的峰值至谷值累计降幅。1929 列没有给出同口径的 GDP 数字或可比跌幅，因此两列之间不能换算，也不能当成同一把尺子横向比较。来源列只在该行确有登记来源句子支撑时给出编号，标为“本文表述（未对源）”的部分是本文的比较编排，不能当已核对事实引用；两次事件的时间范围写在列头，1929 列取崩盘及其后，2008 列取衰退期 2007 年 12 月至 2009 年 6 月。</p>
+<p>这些是官方历史材料中的可核对事实，不是完整因果解释。1929 年的政策行动在当时的制度约束下产生了非预期后果；2008 年的政策组合也不能简单归因于单一工具。两次危机的传导都涉及资产价格、杠杆、金融机构和信心，但具体渠道和相对重要性需要分别研究（本段是本文对两类材料的比较表述，不是来源的结论）。</p>
+<h2>泡沫的识别口径</h2>
+<p>标题写了“泡沫”，就得说清楚凭什么把一次上涨叫泡沫，而不是事后补一个名字。以下是本文使用的判别清单，属方法整理，不引任何登记来源，也不给具体数值：资产价格与可核对的基本量（收入、租金、盈利、供需）长期背离且背离持续扩大；新增购买者比例上升、入场理由从收益变成“再不买就晚了”；融资与杠杆扩张、抵押品按同一资产反复计价；“这次不同”的叙事替代了对现金流与回报的核对；价格上涨本身成为买入理由。</p>
+<p>这份清单只能提高怀疑，不能给出判定：它没有阈值，也无法排除“确实变了的基本面”这一竞争解释；同一组特征在制度、杠杆与政策框架不同的年份里可能对应完全不同的结果。其中“叙事”一项可参考 Shiller 的叙事经济学：流行故事会传播并影响经济波动，但叙事与结果之间的因果方向很难直接证明[4]；因此它只能作为可疑信号，不能当作判定。按历史类比与事后偏差（HIS-002）的要求，使用这份清单时还要写明可反驳条件——出现什么证据就应当放弃“这是泡沫”的判断，而不是等价格证明它。</p>
+<h2>替代解释</h2>
+<ul>
+<li><strong>货币与金融条件</strong>：利率、信贷、金本位或流动性约束可能放大冲击；</li>
+<li><strong>资产负债表与杠杆</strong>：家庭、银行或企业的负债结构影响去杠杆过程；</li>
+<li><strong>政策反应</strong>：救助、监管、财政和货币工具的选择改变结果；</li>
+<li><strong>全球联系</strong>：贸易、资本流动和汇率制度影响冲击传播；</li>
+<li><strong>信息与叙事</strong>：预期、恐慌和政策沟通也会影响市场行为。</li>
+</ul>
+<p>不同研究对这些因素有不同权重。案例比较可以列出候选机制，但不能只凭两次事件就估计某个机制的因果效应；需要更多样本、反事实和识别策略。按历史类比与事后偏差（HIS-002）的方法，使用这类类比还要写明可反驳条件：出现什么证据时就应当放弃它。</p>
+<h2>不能推广的部分</h2>
+<ul>
+<li>两次案例不能估计危机发生的概率，也不能证明“必然重演”；</li>
+<li>制度会学习和变化，历史政策工具不一定适用于今天；</li>
+<li>数据口径、修订和事件选择会影响比较；</li>
+<li>结果相似不代表原因相同，表面相似也可能掩盖关键差异；</li>
+<li>案例比较不是政策建议或投资建议，不能替代针对当前条件的分析。</li>
+<li>本篇把两次事件作为结构化比较来读（机制、制度、规模与时点四个维度），不是模式归纳：说“泡沫会重演”需要一个可定义的案件集合、样本外的判别规则与失败案例的计数，这里都不具备，因此正文不给出任何形式的重演概率或周期规律。</li>
+</ul>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-bubbles-and-crises-comparison-title fig-bubbles-and-crises-comparison-desc" viewBox="0 0 470 254" width="100%">
+<title id="fig-bubbles-and-crises-comparison-title">泡沫危机比较阅读：概念对照</title>
+<desc id="fig-bubbles-and-crises-comparison-desc">1929 危机: 当时信息：结局尚未展开; 机制：股市、金本位与银行; 政策：早期紧缩与被动应对; 结果：深度萧条与长期失业 | 2008 危机: 当时信息：实时数据不完整; 机制：房价、杠杆与证券化; 政策：降息、救助与监管; 结果：深度衰退后逐步复苏</desc>
+<rect x="0.5" y="0.5" width="469" height="253" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+      <rect x="20" y="18" width="430" height="104" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="32" y="38" font-size="13" font-weight="650" fill="var(--accent)" font-family="inherit">1929 危机</text>
+      <circle cx="32" cy="51" r="2.4" fill="var(--accent)"/><text x="42" y="54" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">当时信息：结局尚未展开</tspan></text><circle cx="32" cy="66" r="2.4" fill="var(--accent)"/><text x="42" y="69" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">机制：股市、金本位与银行</tspan></text><circle cx="32" cy="81" r="2.4" fill="var(--accent)"/><text x="42" y="84" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">政策：早期紧缩与被动应对</tspan></text><circle cx="32" cy="96" r="2.4" fill="var(--accent)"/><text x="42" y="99" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">结果：深度萧条与长期失业</tspan></text>
+      <rect x="20" y="132" width="430" height="104" rx="9" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="32" y="152" font-size="13" font-weight="650" fill="var(--accent)" font-family="inherit">2008 危机</text>
+      <circle cx="32" cy="165" r="2.4" fill="var(--accent)"/><text x="42" y="168" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">当时信息：实时数据不完整</tspan></text><circle cx="32" cy="180" r="2.4" fill="var(--accent)"/><text x="42" y="183" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">机制：房价、杠杆与证券化</tspan></text><circle cx="32" cy="195" r="2.4" fill="var(--accent)"/><text x="42" y="198" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">政策：降息、救助与监管</tspan></text><circle cx="32" cy="210" r="2.4" fill="var(--accent)"/><text x="42" y="213" font-size="10.6" font-weight="400" fill="var(--secondary)" text-anchor="start" font-family="inherit"><tspan x="42" dy="0">结果：深度衰退后逐步复苏</tspan></text>
+</svg>
+  <figcaption>图 1：1929 与 2008 两次危机的机制与结果对照。图为概念示意，具体数字与口径见正文。</figcaption>
+</figure>
+
+<h2>图解：共同链条、两列事实、不能推广</h2>
+<figure id="figure-crisis-three-layers">
+  <svg role="img" aria-labelledby="fig-crisis-layers-title fig-crisis-layers-desc" viewBox="0 0 380 420" width="100%">
+    <title id="fig-crisis-layers-title">两次危机的三层比较：共同机制、不同事实口径与推广边界</title>
+    <desc id="fig-crisis-layers-desc">第一层把资产价格上涨、杠杆与抵押、金融压力、衰退与政策连成候选链条；第二层并排给出 1929 年道指跌幅与 1932 年点位、2008 年美国实际 GDP 下降四点三；第三层说明当时信息、制度差异、结果相似不等于原因相同，以及案例不能给概率。</desc>
+    <text x="20" y="22" font-size="11" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">两次危机：共同链条、两列事实、不能推广</text>
+    <text x="20" y="43" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">1929 与 2008；比较机制与制度，不只比跌幅</text>
+    <rect x="16" y="54" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="70" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">① 共同链条只是候选机制</text>
+    <g font-family="inherit" font-size="8" fill="var(--secondary)" text-anchor="middle">
+      <rect x="28" y="86" width="72" height="32" rx="5" fill="var(--surface)" stroke="var(--border)"/>
+      <text x="64" y="99">资产价格</text><text x="64" y="111">上涨</text>
+      <rect x="112" y="86" width="72" height="32" rx="5" fill="var(--surface)" stroke="var(--border)"/>
+      <text x="148" y="99">杠杆与</text><text x="148" y="111">抵押</text>
+      <rect x="196" y="86" width="72" height="32" rx="5" fill="var(--surface)" stroke="var(--border)"/>
+      <text x="232" y="99">金融</text><text x="232" y="111">压力</text>
+      <rect x="280" y="86" width="72" height="32" rx="5" fill="var(--surface)" stroke="var(--border)"/>
+      <text x="316" y="99">衰退与</text><text x="316" y="111">政策</text>
+    </g>
+    <g stroke="var(--muted)" stroke-width="1.2" fill="none">
+      <path d="M100 102 L110 102"/><path d="M184 102 L194 102"/><path d="M268 102 L278 102"/>
+    </g>
+    <text x="28" y="136" font-size="8.4" fill="var(--muted)" font-family="inherit">链条列出可能的传导环节，不能证明两次危机的原因相同或权重相同。</text>
+    <rect x="16" y="164" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="180" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">② 两列事实，不能共用一把尺</text>
+    <text x="28" y="201" font-size="8.5" fill="var(--secondary)" font-family="inherit">1929：10/28 约 −13%、10/29 约 −12%；11 月中失近半；1932 收 41.22</text>
+    <text x="28" y="219" font-size="8.5" fill="var(--secondary)" font-family="inherit">2008：2007-12–2009-06 美国实际 GDP −4.3%；利率降至零 + 资产购买</text>
+    <text x="28" y="239" font-size="8.4" fill="var(--muted)" font-family="inherit">前者是道指点位，后者是实际 GDP；口径不同，不能横比“跌幅”</text>
+    <rect x="16" y="274" width="348" height="104" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="28" y="290" font-size="9.8" font-weight="650" fill="var(--accent)" font-family="inherit">③ 不能推广的部分</text>
+    <text x="28" y="311" font-size="8.6" fill="var(--secondary)" font-family="inherit">当时信息有限，不能用事后结果倒推“当时可预测”</text>
+    <text x="28" y="329" font-size="8.6" fill="var(--secondary)" font-family="inherit">制度、政策工具、全球联系不同，机制权重也不同</text>
+    <text x="28" y="347" font-size="8.6" fill="var(--secondary)" font-family="inherit">结果相似 ≠ 原因相同；两次案例不能估计发生概率</text>
+    <text x="28" y="365" font-size="8.6" fill="var(--secondary)" font-family="inherit">不能证明“必然重演”，也不是政策或投资建议</text>
+    <text x="20" y="400" font-size="8.6" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较框架，不是因果结论；事实与来源见正文表格。</text>
+  </svg>
+  <figcaption>图 2：三层读两次危机。共同链条把资产价格、杠杆、金融压力、衰退与政策串起来，但它只是候选机制；两列事实口径不同——1929 是道指点位与跌幅，2008 是美国实际 GDP 在衰退期的累计降幅，不能横比；边界是当时信息、制度差异、结果不等于原因，以及案例不能给概率。图为比较框架，不是因果结论。</figcaption>
+</figure>
+
+<h2>图解：可疑信号与替代解释</h2>
+<p>前两张图对照 1929 与 2008 的机制和读法；下面两张图把“像不像泡沫”拆成可观察信号，再逼问：除了泡沫，还有什么解释能产生同样的证据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-bubble-checklist-title fig-bubble-checklist-desc" viewBox="0 0 440 280" width="100%">
+    <title id="fig-bubble-checklist-title">五个可疑信号：提高怀疑，不单独证明泡沫</title>
+    <desc id="fig-bubble-checklist-desc">价格远高于可持续盈利或租金、杠杆与融资快速扩张、新进入者与供给增加、媒体与“这次不同”的叙事、监管或承销标准松动，都能提高泡沫怀疑；但每一项也可能由真实基本面、技术变化或正常金融深化解释，不能单独证明泡沫，更不能给出破裂时点。</desc>
+    <text x="20" y="24" font-size="12.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">五个信号都亮，也只能说“值得怀疑”，不能说“明天就破”</text>
+    <g font-family="inherit" font-size="9" fill="var(--text)">
+      <rect x="30" y="48" width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="52" y="59">价格远高于可持续盈利或租金</text>
+      <rect x="30" y="82" width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="52" y="93">杠杆与融资快速扩张</text>
+      <rect x="30" y="116" width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="52" y="127">新进入者与供给增加</text>
+      <rect x="30" y="150" width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="52" y="161">媒体、叙事与“这次不同”</text>
+      <rect x="30" y="184" width="12" height="12" fill="none" stroke="var(--accent)" stroke-width="1.5"/><text x="52" y="195">监管或承销标准松动</text>
+    </g>
+    <rect x="290" y="50" width="130" height="146" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <g font-family="inherit" font-size="9" fill="var(--muted)">
+      <text x="305" y="72">能支持：</text><text x="305" y="90" fill="var(--text)">提高怀疑、</text><text x="305" y="106" fill="var(--text)">要求更多证据</text>
+      <text x="305" y="132">不能支持：</text><text x="305" y="150" fill="var(--gold)">单独证明泡沫、</text><text x="305" y="166" fill="var(--gold)">给出破裂时点</text>
+    </g>
+    <text x="20" y="228" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">每一项都可能是真实基本面、技术变化或正常金融深化；信号组合提高怀疑，不替代因果分析。</text>
+    <text x="20" y="250" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">历史案例：1929 与 2008 都能找到多项信号，但当时的信息并不支持确定时点。</text>
+    <text x="20" y="270" font-size="9" fill="var(--muted)" font-family="inherit" text-anchor="start">图为识别框架，不是投资建议或预测模型。</text>
+  </svg>
+  <figcaption>图 3：价格远高于可持续盈利或租金、杠杆与融资扩张、新进入者与供给增加、媒体叙事、监管标准松动，都能提高泡沫怀疑；但每项也可能由真实基本面、技术变化或金融深化解释，不能单独证明泡沫或给出破裂时点。图为识别示意，不是预测模型。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-alternatives-matrix-title fig-alternatives-matrix-desc" viewBox="0 0 440 310" width="100%">
+    <title id="fig-alternatives-matrix-title">四种替代解释：机制、支持证据与反证</title>
+    <desc id="fig-alternatives-matrix-desc">非理性繁荣、信贷/货币扩张、结构变化/生产率提升、制度/监管失败都能产生价格上涨和杠杆扩张的相似证据。要区分它们，需要看盈利与租金是否兑现、信贷条件是否宽松、生产率是否改善、承销与评级标准是否下降，以及损失是否主要来自外部冲击。</desc>
+    <text x="20" y="24" font-size="12.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">同样的价格曲线，至少四种解释；先看反证条件</text>
+    <line x1="20" y1="42" x2="420" y2="42" stroke="var(--border)" stroke-width="1"/>
+    <g font-family="inherit" font-size="8.5" fill="var(--text)" font-weight="600">
+      <text x="75" y="62" text-anchor="middle">解释</text><text x="205" y="62" text-anchor="middle">机制</text><text x="355" y="62" text-anchor="middle">支持证据 / 反证</text>
+    </g>
+    <g font-family="inherit" font-size="7.8" fill="var(--text)">
+      <text x="20" y="88" text-anchor="start">非理性繁荣</text><text x="120" y="88">预期自我强化</text><text x="270" y="88">价格脱离基本面</text><text x="270" y="100" fill="var(--gold)">反证：现金流兑现</text>
+      <text x="20" y="128" text-anchor="start">信贷/货币扩张</text><text x="120" y="128">低利率与杠杆</text><text x="270" y="128">信贷/GDP、期限利差</text><text x="270" y="140" fill="var(--gold)">反证：信贷未扩张</text>
+      <text x="20" y="168" text-anchor="start">结构变化/生产率</text><text x="120" y="168">真实盈利上修</text><text x="270" y="168">生产率、利润、租金</text><text x="270" y="180" fill="var(--gold)">反证：盈利未兑现</text>
+      <text x="20" y="208" text-anchor="start">制度/监管失败</text><text x="120" y="208">激励错配、标准下降</text><text x="270" y="208">产品复杂、评级记录</text><text x="270" y="220" fill="var(--gold)">反证：损失来自外部冲击</text>
+    </g>
+    <line x1="20" y1="238" x2="420" y2="238" stroke="var(--border)" stroke-width="1"/>
+    <text x="20" y="260" font-size="8.5" fill="var(--muted)" font-family="inherit" text-anchor="start">四种解释可以同时部分成立；案例比较只能筛掉不相容解释，不能给唯一原因或概率。</text>
+    <text x="20" y="280" font-size="8.5" fill="var(--muted)" font-family="inherit" text-anchor="start">1929 与 2008 的具体证据见正文；表中“反证”是区分解释的必要条件，不是完整证伪清单。</text>
+    <text x="20" y="300" font-size="8.5" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较框架，不是对两次危机的最终归因。</text>
+  </svg>
+  <figcaption>图 4：非理性繁荣、信贷/货币扩张、结构变化/生产率提升、制度/监管失败都能产生相似的价格与杠杆证据。区分它们要看盈利与租金是否兑现、信贷条件、生产率、承销与评级标准，以及损失是否主要来自外部冲击。四种解释可同时部分成立；案例比较只能筛掉不相容解释，不能给唯一原因或概率。图为比较示意。</figcaption>
+</figure>
+
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>历史泡沫</h3>
+<p><strong>定义</strong>：历史泡沫是价格远超基本面、由叙事、信贷和群体行为推动，随后剧烈破裂的事件。</p>
+<p><strong>机制</strong>：郁金香、南海、密西西比等泡沫涉及稀缺叙事、杠杆、跨境资本和监管缺失；破裂常伴随信贷收缩。</p>
+<p><strong>例子</strong>：例如 17 世纪荷兰郁金香球茎价格暴涨后崩跌，18 世纪南海公司股票在债务转换和乐观叙事中暴涨。</p>
+<p><strong>边界</strong>：泡沫不是单纯愚蠢；制度、货币、信息不对称和参与激励共同作用，事后识别容易、实时判断难，破裂时点也难以预测。</p>
+<h3>大萧条</h3>
+<p><strong>定义</strong>：大萧条是 1929 年股市崩盘后持续多年的全球性经济萎缩、失业和通缩，1929—1930 年代最严重。</p>
+<p><strong>机制</strong>：银行倒闭、信贷收缩、金本位约束、贸易保护和需求不足相互强化；政策应对从紧缩转向新政和扩张。</p>
+<p><strong>例子</strong>：例如美国银行挤兑和 Smoot-Hawley 关税加剧信贷与贸易收缩，失业率大幅上升。</p>
+<p><strong>边界</strong>：大萧条不是单一原因；货币政策、金融结构、战争债务和制度解释争论至今，金本位和紧缩加剧 vs 结构性问题需并置，不能简化成股市崩盘。</p>
+<h3>债务危机</h3>
+<p><strong>定义</strong>：债务危机是政府、企业或家庭无法按期偿债，引发违约、重组、银行损失和资本外流的事件。</p>
+<p><strong>机制</strong>：外债、汇率、期限错配和信心崩塌常共同作用；IMF 调整、债务重组和债权人协调影响恢复。</p>
+<p><strong>例子</strong>：例如 1980 年代拉美外债危机中，利率上升和商品价格下跌使偿债困难，出现违约和 Brady 重组。</p>
+<p><strong>边界</strong>：债务危机不是单纯挥霍；全球利率、商品价格、银行连带和债权人结构都很关键，紧缩调整可能加深衰退，重组也涉及分配和合法性。</p>
+<h3>亚洲危机</h3>
+<p><strong>定义</strong>：亚洲金融危机是 1997—1998 年东亚和东南亚的货币、银行和债务危机，伴随资本外流和货币贬值。</p>
+<p><strong>机制</strong>：固定汇率、短期外债、银行脆弱和资本账户开放相互作用；投机攻击、传染和 IMF 调整加剧收缩。</p>
+<p><strong>例子</strong>：例如泰铢 1997 年贬值后，危机蔓延到印尼、韩国等地，企业外债和银行坏账恶化。</p>
+<p><strong>边界</strong>：亚洲危机不是单纯“裙带资本主义”；宏观政策、金融监管、全球流动性和债权人行为共同作用，IMF 紧缩方案也受批评，不能只用道德叙事解释。</p>
+<h3>科技泡沫</h3>
+<p><strong>定义</strong>：科技泡沫是 1990 年代末至 2000 年互联网和电信股估值暴涨、随后崩跌的事件。</p>
+<p><strong>机制</strong>：新经济叙事、风险资本、IPO 热潮和电信资本开支推动估值；盈利遥远、商业模式未验证和融资收紧导致破裂。</p>
+<p><strong>例子</strong>：例如 2000 年纳斯达克见顶后，许多互联网公司破产，电信设备投资过剩。</p>
+<p><strong>边界</strong>：科技泡沫不是技术无价值；互联网长期改变经济，但短期估值和资本错配造成损失，事后把泡沫等同于技术失败会误判，基础设施也有过度投资。</p>
+<h3>全球金融危机</h3>
+<p><strong>定义</strong>：全球金融危机是 2007—2009 年由美国次贷和全球信贷收缩引发的系统性危机，伴随银行倒闭、衰退和救助。</p>
+<p><strong>机制</strong>：低利率、杠杆、证券化、评级失真、影子银行和房地产泡沫相互作用；雷曼倒闭后流动性冻结，央行量化宽松介入。</p>
+<p><strong>例子</strong>：例如 2008 年雷曼兄弟破产引发全球银行间信任危机，多国政府注资和降息。</p>
+<p><strong>边界</strong>：危机不是单一恶人；监管、激励、全球失衡和模型失误共同作用，救助也引发道德风险和分配争议，事后监管改革提高资本但未消除所有脆弱性。</p>
+<h3>欧债及近期事件</h3>
+<p><strong>定义</strong>：欧债危机是 2010—2012 年欧元区部分成员国主权债务和银行危机，近期事件包括疫情冲击、通胀和银行压力。</p>
+<p><strong>机制</strong>：货币联盟无统一财政、银行与主权风险相互强化、紧缩和救助争议；ECB 的“不惜一切”承诺和改革缓解危机。</p>
+<p><strong>例子</strong>：例如希腊债务重组和意大利、西班牙收益率上升，2020 年疫情引发大规模财政货币支持。</p>
+<p><strong>边界</strong>：欧债不是单纯财政挥霍；外部失衡、银行敞口、制度设计和全球环境共同作用，紧缩和救助的分配后果长期存在，近期事件也显示新冲击会暴露旧脆弱性。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<ul>
+<li>阅读方法：如何读经济史与思想史（HIS-001）、历史类比与事后偏差（HIS-002）。</li>
+<li>数据口径：数据单位与统计口径（RES-001）。</li>
+<li>后续可比较其他泡沫与危机案例，但应保持同一比较框架。</li>
+</ul>
+<h2>练习</h2>
+<ol>
+<li><strong>事实与解释。</strong> 上表中哪些是可核对事实，哪些需要额外证据才能称为原因？</li>
+<li><strong>当时信息。</strong> 如果回到 1929 年或 2008 年，你会先查哪些数据来判断金融压力？哪些数据当时可能不可得？</li>
+<li><strong>比较边界。</strong> 两次危机都出现股市下跌和衰退。为什么这不足以证明它们具有相同的传导机制？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>日期、跌幅、GDP 变化、政策利率和资产购买是可核对事实；“金本位导致全球衰退”“杠杆是主因”等是解释，需要理论和额外证据。</li>
+<li>可查信用利差、银行资产负债表、流动性指标、资产价格和融资条件；当时可能缺少及时、统一或完整的数据，信息传递也更慢。</li>
+<li>相同结果可以由不同机制产生。必须比较制度、杠杆、金融结构、政策工具和全球联系，并用反例和独立证据检验，而不能只凭结果标签。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Federal Reserve History. “Stock Market Crash of 1929.” <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929">https://www.federalreservehistory.org/essays/stock-market-crash-of-1929</a>（访问日期：2026-11-05）</li>
+<li>Federal Reserve History. “The Great Recession.” <a href="https://www.federalreservehistory.org/essays/great-recession-of-200709">https://www.federalreservehistory.org/essays/great-recession-of-200709</a>（访问日期：2026-11-05）</li>
+<li>Fischhoff, Baruch. “Hindsight is not equal to foresight: The effect of outcome knowledge on judgment under uncertainty.” <em>Journal of Experimental Psychology: Human Perception and Performance</em> 1, no. 3 (1975): 288–299. <a href="https://doi.org/10.1037/0096-1523.1.3.288">https://doi.org/10.1037/0096-1523.1.3.288</a>（访问日期：2026-10-30）</li>
+<li>Shiller, Robert J. “Narrative Economics.” <em>American Economic Review</em> 107, no. 4 (2017): 967–1004. <a href="https://doi.org/10.1257/aer.107.4.967">https://doi.org/10.1257/aer.107.4.967</a>（访问日期：2026-11-23）</li>
+</ol>
+  <section class="article-demo" id="demo-history" data-demo="history" data-lang="zh" aria-labelledby="demo-history-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-history-title">两次危机，两条时间尺</h2> <p class="demo-intro">拖动“危机起点后第几个月”，看 1929 与 2008 各自走到哪一步。两条尺子的起点和口径不同，不能直接比高低。</p> </header>      <div class="demo-grid"> <div class="demo-controls"> <div class="demo-field"> <label for="history-months"><span>起点后第几个月</span><output data-for="months">0</output></label> <input id="history-months" data-role="months" data-default="0" type="range" min="0" max="40" step="1" value="0"> </div> <p class="demo-hint">1929 看道琼斯指数点位，2008 看衰退期与实际 GDP。两条尺子口径不同，不能直接比高低。</p> </div> <div class="demo-output"> <div class="demo-stats"> <div class="demo-stat"><span>1929：崩盘后</span><strong data-out="h1929">—</strong></div> <div class="demo-stat"><span>2008：衰退开始后</span><strong data-out="h2008">—</strong></div> <div class="demo-stat"><span>两次危机相隔</span><strong>79 年</strong></div> </div> <div class="demo-chart"> <p class="demo-chart-label">两条危机路径（按各自起点对齐）</p> <div class="demo-history" data-chart="history"> <p class="demo-history-legend"> <i></i>圆点 = 有登记来源的事件；竖线 = 当前位置 </p> <div class="demo-lane" data-history="1929"> <span class="demo-lane-name">1929</span> <div class="demo-lane-track"> <i class="demo-lane-event" style="left:0%" title="1929 年 10 月 28 日：道指跌近 13%"></i> <i class="demo-lane-event" style="left:2.5%" title="1929 年 11 月中旬：点位失去近一半"></i> <i class="demo-lane-event" style="left:85%" title="1932 年夏：道指收于 41.22"></i> <b class="demo-lane-cursor" data-history-cursor></b> </div> </div> <div class="demo-lane" data-history="2008"> <span class="demo-lane-name">2008</span> <div class="demo-lane-track"> <i class="demo-lane-event" style="left:0%" title="2007 年 12 月：衰退开始"></i> <i class="demo-lane-event" style="left:45%" title="2009 年 6 月：衰退结束"></i> <i class="demo-lane-event" style="left:52.5%" title="2009 年 Q2：实际 GDP 较峰值下降 4.3%"></i> <b class="demo-lane-cursor" data-history-cursor></b> </div> </div> <div class="demo-history-axis" aria-hidden="true"><span>0</span><span>12</span><span>24</span><span>36</span><span>40</span></div> </div> </div> <p class="demo-action" data-out="h1929text"></p> <p class="demo-action" data-out="h2008text"></p> </div> </div>     <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>用背景、可得信息、机制、结果和替代解释比较两次危机，而不是只比较跌幅。</li><li>识别案例比较中的选择偏差、制度变化和数据修订限制。</li><li>说明哪些结论可以从案例提出，哪些必须留给独立证据。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/reading-economic-history/">HIS-001 · 如何读经济史与思想史</a> </li><li> <a href="/learn/historical-analogies-and-hindsight-bias/">HIS-002 · 历史类比与事后偏差</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/reading-economic-history/">HIS-001 · 如何读经济史与思想史</a> </li><li> <a href="/learn/historical-analogies-and-hindsight-bias/">HIS-002 · 历史类比与事后偏差</a> </li><li> <a href="https://research.51invest.com/learn/data-units-and-definitions/">RES-001 · 数据单位与统计口径</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929" rel="noopener noreferrer" target="_blank">Stock Market Crash of 1929</a> <p>Federal Reserve History · Federal Reserve Bank of St. Louis</p> <p>访问：2026-11-05 · 许可：Copyrighted; site Terms of Use prohibit reproduction (cite-only)</p> <p>支持论点：1929 年股市崩盘后道琼斯指数点位大幅下跌，美联储的行动与金本位把紧缩压力传到国外。 逐字（页面于 2026-11-05 重新取回，HTTP 200、44,614 字节，去标签文本 17,208 字符，缓存 docs/data-evidence/h024-crash.txt；下列各句在该文本中各出现 1 次）：“On Black Monday, October 28, 1929, the Dow declined nearly 13 percent”；“On the following day, Black Tuesday, the market dropped nearly 12 percent”；“By mid-November, the Dow had lost almost half of its value”；“the summer of 1932, when the Dow closed at 41.22”；“Because of the international gold standard, the Fed actions forced foreign central banks to raise their own interest rates”；以及 “Tight-money policies tipped economies around the world into recession”。正文 1929 列的两个跌幅、11 月中旬的近半跌幅、1932 年点位与全球扩散句都取自这些句子；该页未给同口径的美国 GDP 降幅，两列因此仍不可换算。</p> </div><div class="source"> <a href="https://www.federalreservehistory.org/essays/great-recession-of-200709" rel="noopener noreferrer" target="_blank">The Great Recession</a> <p>Federal Reserve History · Federal Reserve Bank of St. Louis</p> <p>访问：2026-11-05 · 许可：Copyrighted; site Terms of Use prohibit reproduction (cite-only)</p> <p>支持论点：2007 年 12 月至 2009 年 6 月的衰退是二战以来最长的一次，实际 GDP 自峰值到谷底下降 4.3%；美联储把联邦基金利率降到零附近，并使用前瞻指引与大规模资产购买。 逐字（页面于 2026-11-05 重新取回，HTTP 200、35,876 字节，去标签文本 9,862 字符，缓存 docs/data-evidence/h024-greatrec.txt；下列各句各出现 1 次）：“The Great Recession began in December 2007 and ended in June 2009”；“Real gross domestic product (GDP) fell 4.3 percent from its peak in 2007Q4 to its trough in 2009Q2”，该页另有 the largest decline in the postwar era (based on data as of October 2013) 的限定；“the FOMC began to use its policy statement to provide forward guidance”；“large scale asset purchase (LSAP) programs”。正文 2008 列的 4.3% 是峰值 2007Q4 到谷底 2009Q2 的累计降幅，不是年度增速。</p> </div><div class="source"> <a href="https://doi.org/10.1037/0096-1523.1.3.288" rel="noopener noreferrer" target="_blank">Hindsight is not equal to foresight: The effect of outcome knowledge on judgment under uncertainty</a> <p>Baruch Fischhoff · Journal of Experimental Psychology: Human Perception and Performance, 1(3), 288–299</p> <p>访问：2026-10-30 · 许可：Publisher terms; linked citation only</p> <p>支持论点：知道结果会改变对事前可预测性的判断，比较案例时必须重建当时信息。</p> </div><div class="source"> <a href="https://doi.org/10.1257/aer.107.4.967" rel="noopener noreferrer" target="_blank">Narrative Economics</a> <p>Robert J. Shiller · American Economic Review 107(4), 967–1004</p> <p>访问：2026-11-23 · 许可：Copyrighted journal article; cite and link only, no reproduction</p> <p>支持论点：该文把叙事定义为可在人群中传播、影响经济波动的故事，并明确指出叙事与结果之间的关联难以排除反向因果，不能轻易证明因果方向；本文只把它用于“叙事”信号的概念边界。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/bubbles-and-crises-comparison/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

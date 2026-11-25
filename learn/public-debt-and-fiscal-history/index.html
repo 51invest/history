@@ -1,0 +1,351 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>公共债务与财政史 · 巫妖投资</title><meta name="description" content="以英国和美国为例，考察17世纪末以来战争、税收与经济增长如何塑造公共债务水平与债务管理。"><link rel="canonical" href="https://history.51invest.com/learn/public-debt-and-fiscal-history/"><link rel="alternate" hreflang="zh-CN" href="https://history.51invest.com/learn/public-debt-and-fiscal-history/"><link rel="alternate" hreflang="en" href="https://history.51invest.com/en/learn/public-debt-and-fiscal-history/"><link rel="alternate" hreflang="x-default" href="https://history.51invest.com/learn/public-debt-and-fiscal-history/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link" href="https://economics.51invest.com/"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link active" href="/" aria-current="page"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/public-debt-and-fiscal-history/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济与金融史</a> <span class="sep">/</span> <span aria-current="page">公共债务与财政史</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">历史与人物</span> <h1 class="article-title">公共债务与财政史</h1> <p class="article-summary">以英国和美国为例，考察17世纪末以来战争、税收与经济增长如何塑造公共债务水平与债务管理。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>HIS-M13 · 财政与公共债务史</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>8 分钟 · 13 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>问题与范围</h2>
+<p>本文考察英国和美国公共债务与财政的长期变化，时间从17世纪末到2025年，重点在战争融资、债务/GDP比率和债务管理；不写全球债务全景，也不预测当前债务是否可持续。</p>
+<h2>背景</h2>
+<p>公共债务是国家对未来税收的承诺。战争、衰退和大型公共工程会带来突发支出，而税收调整缓慢，政府于是发行期限不同的债券。债务能否持续，取决于利率、增长率、初级财政余额和债权人信心，而不只是债务总额。</p>
+<h2>原始材料</h2>
+<p>国债账簿、预算文件、央行历史统计和财政部债务表是主要材料。英格兰银行的千年宏观数据集提供1693年以来英国公共债务的名义值与GDP比率；美国财政部“历史债务余额”提供1790年以来联邦债务年度值。历史GDP与债务口径会修订，名义值不能直接跨期比较。</p>
+<h2>变化过程</h2>
+<p>英国公共债务在1815/16年度约为GDP的214%，取自“按相应政治边界的英国名义GDP”口径；同一行按“名义GDP按市场价格”口径为183.6%，两列的差别是1816年前改用大不列颠GDP数据[1]。“此前拿破仑战争大幅推高债务”是本文概括：该工作簿字符串层内 Napoleon 出现0次，唯一相关表注只说大不列颠与爱尔兰的债务于1817年合并[1]。1914/15年度约为64%，1918/19年度升至约140%；1945/46年度为259.0%，实测为该比率列317个数值中的最大值（次高1946/47为244.4%）[1]。战后比率下降，1975/76年度约为52%，2007/08年度约为47%[1]。</p>
+<p>美国联邦债务1790财年约为7106万美元，1865、1919、1945财年分别约为26.8亿、273.9亿和2586.8亿美元；2025财年末约为37.6万亿美元（U.S. Department of the Treasury）。绝对额长期上升，但只有与GDP、利率和税收比较才有财政含义。</p>
+<table>
+<thead>
+<tr>
+<th>时间</th>
+<th>国家/事件</th>
+<th>债务或比率</th>
+<th>口径与不确定性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1815/16</td>
+<td>英国，拿破仑战争后</td>
+<td>约214%（AR 口径；AP 口径为183.6%）</td>
+<td>按相应政治边界GDP；历史估计会修订；战争因果为本文概括</td>
+</tr>
+<tr>
+<td>1918/19</td>
+<td>英国，一战末</td>
+<td>约140%</td>
+<td>合并国债；含定期年金资本化估值</td>
+</tr>
+<tr>
+<td>1945/46</td>
+<td>英国，二战末</td>
+<td>259.0%</td>
+<td>实测为该比率列317个数值中的最大值；GDP口径影响水平</td>
+</tr>
+<tr>
+<td>1975/76</td>
+<td>英国</td>
+<td>约52%</td>
+<td>战后下降；名义GDP修订</td>
+</tr>
+<tr>
+<td>2007/08</td>
+<td>英国</td>
+<td>约47%</td>
+<td>金融危机前；净债务口径不同</td>
+</tr>
+<tr>
+<td>1790财年</td>
+<td>美国</td>
+<td>约7106万美元</td>
+<td>未偿总额；未调整通胀</td>
+</tr>
+<tr>
+<td>1945财年</td>
+<td>美国</td>
+<td>约2586.8亿美元</td>
+<td>二战末；未偿总额</td>
+</tr>
+<tr>
+<td>2025财年</td>
+<td>美国</td>
+<td>约37.6万亿美元</td>
+<td>2025财年末；未偿总额</td>
+</tr>
+</tbody></table>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-public-debt-and-fiscal-history-title fig-public-debt-and-fiscal-history-desc" viewBox="0 0 470 272" width="100%">
+    <title id="fig-public-debt-and-fiscal-history-title">公共债务与财政史：数量对照</title>
+<desc id="fig-public-debt-and-fiscal-history-desc">1815/16: 约 214%; 1918/19: 约 140%; 1945/46: 259%; 1975/76: 约 52%; 2007/08: 约 47%</desc>
+<rect x="0.5" y="0.5" width="469" height="271" rx="12" fill="var(--surface)" stroke="var(--border)"/><line x1="126" y1="24" x2="126" y2="256" stroke="var(--border)" stroke-width="1"/>
+      <text x="20" y="52" font-size="11.5" fill="var(--secondary)" font-family="inherit">1815/16</text>
+      <rect x="126" y="39" width="221.3182570325427" height="22" rx="3" fill="var(--accent)"/>
+      <line x1="126" y1="36" x2="126" y2="65" stroke="var(--muted)" stroke-width="1"/>
+      <text x="354.3182570325427" y="55" font-size="11" font-weight="600" fill="var(--text)" font-family="inherit">约 214%</text>
+      <text x="20" y="96" font-size="11.5" fill="var(--secondary)" font-family="inherit">1918/19</text>
+      <rect x="126" y="83" width="144.78764478764475" height="22" rx="3" fill="var(--accent)"/>
+      <line x1="126" y1="80" x2="126" y2="109" stroke="var(--muted)" stroke-width="1"/>
+      <text x="277.78764478764475" y="99" font-size="11" font-weight="600" fill="var(--text)" font-family="inherit">约 140%</text>
+      <text x="20" y="140" font-size="11.5" fill="var(--secondary)" font-family="inherit">1945/46</text>
+      <rect x="126" y="127" width="267.85714285714283" height="22" rx="3" fill="var(--accent)"/>
+      <line x1="126" y1="124" x2="126" y2="153" stroke="var(--muted)" stroke-width="1"/>
+      <text x="400.85714285714283" y="143" font-size="11" font-weight="600" fill="var(--text)" font-family="inherit">259%</text>
+      <text x="20" y="184" font-size="11.5" fill="var(--secondary)" font-family="inherit">1975/76</text>
+      <rect x="126" y="171" width="53.778268063982345" height="22" rx="3" fill="var(--accent)"/>
+      <line x1="126" y1="168" x2="126" y2="197" stroke="var(--muted)" stroke-width="1"/>
+      <text x="186.77826806398235" y="187" font-size="11" font-weight="600" fill="var(--text)" font-family="inherit">约 52%</text>
+      <text x="20" y="228" font-size="11.5" fill="var(--secondary)" font-family="inherit">2007/08</text>
+      <rect x="126" y="215" width="48.60728075013788" height="22" rx="3" fill="var(--accent)"/>
+      <line x1="126" y1="212" x2="126" y2="241" stroke="var(--muted)" stroke-width="1"/>
+      <text x="181.60728075013787" y="231" font-size="11" font-weight="600" fill="var(--text)" font-family="inherit">约 47%</text>
+</svg>
+  <figcaption>图 1：英国公共债务占 GDP 的比重：战争抬升，战后回落（正文同一口径）。柱从零起算，数值取自正文；图不另作推断。；样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<p>图 2 不停留在历史柱形，而是把比率背后的四个力画出来：利息和基本赤字推高，名义增长和基本盈余拉低；r 与 g 谁占上风，决定债务比率的方向。</p>
+<figure id="figure-debt-forces">
+  <svg role="img" aria-labelledby="fig-debt-dynamics-title fig-debt-dynamics-desc" viewBox="0 0 380 312" width="100%">
+    <title id="fig-debt-dynamics-title">债务比率的四个力</title>
+    <desc id="fig-debt-dynamics-desc">中央是债务除以 GDP 的水平。左侧两个流入：利息 r 乘债务、基本赤字，推高比率；右侧两个流出：名义增长 g 乘债务、基本盈余，拉低比率。底部公式为变化约等于 r 减 g 乘债务比率，减去基本盈余，再加其他因素。r 大于 g 时利息占上风，r 小于 g 时增长占上风。</desc>
+    <defs>
+      <marker id="fig-debt-in" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--gold)"/></marker>
+      <marker id="fig-debt-out" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="var(--muted)"/></marker>
+    </defs>
+    <g font-family="inherit">
+      <text x="190" y="24" font-size="12.2" font-weight="650" fill="var(--accent)" text-anchor="middle">债务比率的四个力</text>
+      <rect x="140" y="70" width="100" height="150" rx="10" fill="var(--surface-2)" stroke="var(--border)"/>
+      <rect x="140" y="142" width="100" height="78" fill="var(--gold)" opacity="0.22"/>
+      <text x="190" y="58" font-size="11.2" font-weight="650" fill="var(--text)" text-anchor="middle">债务 / GDP</text>
+      <text x="190" y="166" font-size="10.2" fill="var(--secondary)" text-anchor="middle">比率水平</text>
+      <line x1="48" y1="108" x2="132" y2="118" stroke="var(--gold)" stroke-width="2" marker-end="url(#fig-debt-in)"/>
+      <line x1="48" y1="196" x2="132" y2="190" stroke="var(--gold)" stroke-width="2" marker-end="url(#fig-debt-in)"/>
+      <line x1="248" y1="118" x2="332" y2="108" stroke="var(--muted)" stroke-width="2" marker-end="url(#fig-debt-out)"/>
+      <line x1="248" y1="190" x2="332" y2="196" stroke="var(--muted)" stroke-width="2" marker-end="url(#fig-debt-out)"/>
+      <g font-size="11.2" fill="var(--gold)">
+        <text x="8" y="90">利息 r×D</text>
+        <text x="8" y="184">基本赤字</text>
+      </g>
+      <g font-size="11.2" fill="var(--secondary)" text-anchor="end">
+        <text x="372" y="90">名义增长 g×D</text>
+        <text x="372" y="184">基本盈余</text>
+      </g>
+      <text x="128" y="106" font-size="11.5" fill="var(--gold)" text-anchor="end">＋</text>
+      <text x="252" y="106" font-size="11.5" fill="var(--muted)">−</text>
+      <text x="8" y="250" font-size="11.2" fill="var(--text)">Δ(D/Y) ≈ (r − g) × D/Y − 基本盈余 + 其他</text>
+      <text x="8" y="270" font-size="10.2" fill="var(--muted)">r、g 为名义值；“其他”包括汇率、资产出售与统计修订。</text>
+      <text x="8" y="292" font-size="10.4" fill="var(--secondary)">r &gt; g：利息占上风，比率倾向上升；r &lt; g：增长占上风，比率倾向下降。</text>
+    </g>
+  </svg>
+  <figcaption>图 2：债务比率变化的四个力。利息和基本赤字推高比率，名义增长和基本盈余拉低比率；r 与 g 的相对大小决定净方向。图为方向示意，不代入任何国家数据；r、g 为名义值，“其他”包括汇率、资产出售与统计修订。</figcaption>
+</figure>
+
+<h2>主要争论</h2>
+<p>第一，绝对额与比率：债务总额上升可能只是经济变大；比率受GDP修订和边界变化影响。第二，战争与福利：19世纪债务高峰多与战争有关，20世纪后社会保障和公共服务也推高支出，归因需看具体预算。第三，高债务是否拖累增长：反向因果、利率与政策反应难以分离，历史相关不等于因果。第四，如何降低比率：增长、通胀、财政紧缩、金融抑制和违约都曾起作用，代价与分配后果不同。</p>
+<h2>影响与延续</h2>
+<p>常规化的债务管理、基准国债市场、财政规则和债务统计成为现代国家能力的一部分；央行在危机中购买国债又使财政与货币边界更受关注。</p>
+<h2>事后偏差</h2>
+<p>二战后高债务比率的下降常被写成紧缩的功劳，但增长、通胀和金融抑制同样重要；这既不证明高债务无害，也不证明紧缩必然成功。</p>
+<!-- kp-supplement:start -->
+<h2>知识点精读</h2>
+<h3>国家能力</h3>
+<p><strong>定义</strong>：国家能力是国家征税、提供公共服务、维持秩序和执行政策的能力，依赖财政、官僚和信息。</p>
+<p><strong>机制</strong>：国家能力通过税基、行政体系、统计、法律和合法性构建；战争、危机和经济发展常推动能力建设。</p>
+<p><strong>例子</strong>：例如近代欧洲战争迫使国家建立常备军、国债和税务官僚。</p>
+<p><strong>边界</strong>：国家能力不是越大越好；征税和监控可能压制经济和社会，能力也可能被精英俘获，弱国家不一定小政府，强国家也不一定高效。</p>
+<h3>税收</h3>
+<p><strong>定义</strong>：税收是国家强制征收的收入，形式包括土地税、人头税、关税、盐税、所得税、增值税和社会保险缴款。</p>
+<p><strong>机制</strong>：税基、税率、征管和合法性决定收入；直接税与间接税、累进与累退影响分配和经济行为。</p>
+<p><strong>例子</strong>：例如英国引入所得税为拿破仑战争融资，增值税在 20 世纪成为广泛消费税。</p>
+<p><strong>边界</strong>：税收不是中性提取；转嫁、避税、地下经济和激励扭曲影响归宿，征税能力也受政治同意和精英抵抗约束，不能只看法定税率。</p>
+<h3>公债</h3>
+<p><strong>定义</strong>：公债是政府向国内外债权人借款形成的义务，形式包括债券、贷款和短期票据。</p>
+<p><strong>机制</strong>：债务可持续性取决于利率、增长、初级盈余和债权人信心；战争、危机和减税会推高债务。</p>
+<p><strong>例子</strong>：例如英国在 18 世纪用长期国债为战争融资，形成活跃的政府债券市场。</p>
+<p><strong>边界</strong>：公债不是家庭债务；政府可征税、发钞和重组，货币主权改变约束，但过高债务会挤占预算、引发通胀或违约，代际负担也有争议。</p>
+<h3>战争融资</h3>
+<p><strong>定义</strong>：战争融资是为军事动员筹集资金，包括征税、借款、发钞、征用和盟友援助。</p>
+<p><strong>机制</strong>：战争成本高、时点急，政府常混合税收、债务和通胀；财政能力和信用影响胜负和战后稳定。</p>
+<p><strong>例子</strong>：例如一战交战国发行战争债券、增税并扩大货币发行，战后出现通胀和债务压力。</p>
+<p><strong>边界</strong>：战争融资不是单纯经济问题；破坏、债务和通胀会造成长期社会代价，胜利者也可能因财政崩溃受损，不能把融资成功等同国家成功。</p>
+<h3>主权债务与财政制度</h3>
+<p><strong>定义</strong>：主权债务是中央政府或公共部门债务，财政制度包括预算、债务管理、规则、监督和危机处置。</p>
+<p><strong>机制</strong>：债务危机常由外部冲击、汇率、银行连带和信心崩塌触发；IMF 调整、债务重组和财政规则影响恢复。</p>
+<p><strong>例子</strong>：例如拉美债务危机和欧债危机中，主权债务与银行、汇率问题交织。</p>
+<p><strong>边界</strong>：主权债务不是普通合约；集体行动、政治问责和债权人结构使重组复杂，财政规则可约束但也可被规避，紧缩可能加深衰退。</p>
+<!-- kp-supplement:end -->
+
+<h2>关联</h2>
+<p>ECO-011 GDP 与国民经济核算；FIN-005 中央银行资产负债表；MKT-004 债券的权利与现金流；HIS-018 银行与中央银行史；HIS-020 金本位布雷顿森林与浮动汇率。</p>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-timeline-title fig-batch-timeline-desc" viewBox="0 0 340 300" width="100%">
+    <title id="fig-batch-timeline-title">公共债务与财政史：时间线</title>
+    <desc id="fig-batch-timeline-desc">按背景、变化、结果、影响四段串起本文论证；不是历史年表，也不把先后当成因果。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">公共债务与财政史：阶段，不是阶段</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">四段帮助定位论证；先后顺序本身不证明因果。</text>
+    <line x1="14" y1="48" x2="326" y2="48" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <circle cx="48" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="48" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">背景</text>
+      <rect x="14" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="19" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">背景</text>
+      <text x="19" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">公共债务是国家</text>
+      <text x="19" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">对未来税收的承</text>
+      <text x="19" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">诺。战争、衰退</text>
+      <text x="19" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和大型公共工程</text>
+      <text x="19" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">会带来突发支出…</text>
+    </g>
+    <g>
+      <circle cx="128" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="128" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">变化</text>
+      <rect x="94" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="99" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">变化过程</text>
+      <text x="99" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">变化过程：英国</text>
+      <text x="99" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">公共债务在181</text>
+      <text x="99" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">5/16年度约为G</text>
+      <text x="99" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">DP的214%，取自</text>
+      <text x="99" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">“按相应政治范…</text>
+    </g>
+    <g>
+      <circle cx="208" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="208" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">结果</text>
+      <rect x="174" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="179" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">问题与范围</text>
+      <text x="179" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文考察英国和</text>
+      <text x="179" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">美国公共债务与</text>
+      <text x="179" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">财政的长期变化</text>
+      <text x="179" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">，时间从17世纪</text>
+      <text x="179" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">末到2025年，重…</text>
+    </g>
+    <g>
+      <circle cx="288" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="288" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">影响</text>
+      <rect x="254" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="259" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">主要争论</text>
+      <text x="259" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，绝对额与</text>
+      <text x="259" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">比率：债务总额</text>
+      <text x="259" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">上升可能只是经</text>
+      <text x="259" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">济变大；比率受</text>
+      <text x="259" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">GDP修订和范围…</text>
+    </g>
+    <line x1="55" y1="74" x2="121" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="135" y1="74" x2="201" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="215" y1="74" x2="281" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="14" y1="246" x2="326" y2="246" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="262" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先问每一段有没有真的发生，再问相邻两段之间有没有机制。</text>
+    <text x="14" y="276" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">没有机制时，只能写“先后”，不能写“导致”。</text>
+    <text x="14" y="290" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：公共债务与财政史的时间线：背景、变化、结果与影响。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">公共债务与财政史：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">公共债务与财政史：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文考察英国和美国公共债务与财政</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">的长期变化，时间从17世纪末到2025</text>
+      <text x="24" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">年，重点在战争融资、债务/GDP比率</text>
+      <text x="24" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和债务管理；不写全球债务全景，也…</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，绝对额与比率：债务总额上升</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">可能只是经济变大；比率受GDP修订</text>
+      <text x="188" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和边界变化影响。第二，战争与福利</text>
+      <text x="188" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">：19世纪债务高峰多与战争有关，20…</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：公共债务与财政史的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">公共债务与财政史：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">公共债务与财政史：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">以英国和美国为例，考察17</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">世纪末以来战争、税收与经…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文考察英国和美国公共债</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">务与财政的长期变化，时间…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">第一，绝对额与比率：债务总额上升可能</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">只是经济变大；比率受GDP修订和范围变…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 5：公共债务与财政史的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li>1815/16年度英国债务比率高于1945/46年度吗？</li>
+<li>美国债务绝对额上升能否说明财政状况恶化？</li>
+<li>二战后债务比率下降有哪些可能原因？</li>
+</ol>
+<details>
+<summary>参考答案要点</summary>
+
+<ol>
+<li>不是；1815/16年度约214%，1945/46年度约259%，后者更高。</li>
+<li>不能；还需看GDP、利率、税收与债务口径；绝对额上升可能伴随经济扩张。</li>
+<li>名义增长、通胀、财政盈余和金融抑制都可能；相对贡献需具体数据。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Bank of England. “A millennium of macroeconomic data for the UK”, worksheet A29: “Nominal or Par Values of UK Public Sector Debt 1693–2016”. <a href="https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx">https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx</a>（访问日期：2026-10-30）</li>
+<li>U.S. Department of the Treasury, Bureau of the Fiscal Service. “Historical Debt Outstanding”. <a href="https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/">https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>能用英美两国的战争、税收与增长证据说明公共债务水平的形成与债务管理的选择</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>能在历史叙述中正确区分债务存量与赤字流量</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>能用英美两国的战争、税收与增长证据说明公共债务水平的形成与债务管理的选择</li><li>能在历史叙述中正确区分债务存量与赤字流量</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/history-of-banking-and-central-banks/">HIS-018 · 银行与中央银行史</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/history-of-banking-and-central-banks/">HIS-018 · 银行与中央银行史</a> </li><li> <a href="https://economics.51invest.com/learn/gdp-and-national-accounts/">ECO-011 · GDP 与国民经济核算</a> </li><li> <a href="https://markets.51invest.com/learn/bond-rights-and-cash-flows/">MKT-004 · 债券的权利与现金流</a> </li><li> <a href="https://finance.51invest.com/learn/central-bank-balance-sheets/">FIN-005 · 中央银行资产负债表</a> </li><li> <a href="/learn/gold-standard-bretton-woods-and-floating-rates/">HIS-020 · 金本位布雷顿森林与浮动汇率</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.bankofengland.co.uk/-/media/boe/files/statistics/research-datasets/a-millennium-of-macroeconomic-data-for-the-uk.xlsx" rel="noopener noreferrer" target="_blank">A millennium of macroeconomic data for the UK, worksheet A29: Nominal or Par Values of UK Public Sector Debt 1693–2016</a> <p>Bank of England · Bank of England</p> <p>访问：2026-11-03 · 许可：Open Government Licence v3.0 (Bank of England Database)</p> <p>支持论点：该官方数据集A29表支持本文英国公共债务占GDP比率的数值：1815/16年度约213.7%，1914/15年度约63.7%，1918/19年度约140.2%，1945/46年度约259.0%，1975/76年度约52.4%，2007/08年度约46.9%；口径为含定期年金资本化估值的合并英国国债，除以当时英国边界内的名义GDP。 2026-11-03 工作簿内实测补记（缓存 `docs/data-evidence/boe-millennium.xlsx`，HTTP 200，27,533,690 字节，109 表）：A29 表第 269 行的 A 列标签为 1945/46，同行 AF/AJ/AK/AL 列值为 25,921.6（£m 债务余额），AO/AQ 列 25,898.65，AN/AP/AR 为 1,951.0 与 178.51 等其他口径列。工作簿字符串表中确有口径注记逐字 &quot;as a % of GDP&quot;、&quot;GB debt as a % of GB GDP up to 1830, UK basis  after 1830&quot;（原文双空格照录）与 &quot;based on GB funded debt and GB GDP before 1817&quot;，这三句直接支持本文关于&quot;GB／UK 基期切换&quot;与&quot;表标题年份与实际口径不一致&quot;的限定语。比率列本身仍未定位：259.0% 只有在同年名义 GDP ≈ 100,083 £m 时才与 25,921.6 自洽，而该 GDP 单元格本轮未找到，故&quot;259% 为全序列峰值&quot;仍不作已核验。 2026-11-03 第三轮按单元格定位（工作表 A29. The National Debt = xl/worksheets/sheet38.xml）。比率列表头逐字：AP=&#39;as a % of nominal GDP at market prices&#39;（表注 &#39;GDP of GB+all of Ireland up to 1920, GB+N.Ireland from 1921&#39;）、AR=&#39;as a % of UK nominal GDP according to relevant political boundary&#39;（表注 &#39;Using GB GDP data prior to 1816&#39;）；另有表注 &#39;Note the debts of Great Britain and Ireland were consolidated in 1817&#39; 与 &#39;Approximate end calendar year estimates £mn&#39;。逐格读数：1815/16：第 134 行 AP=183.5629%、AR=213.6701%（拼接债务 AO=885.683 £m）；1914/15：第 233 行 AP=63.7090%、AR=63.7090%（拼接债务 AO=1932.850 £m）；1918/19：第 237 行 AP=140.2477%、AR=140.2477%（拼接债务 AO=7776.975 £m）；1945/46：第 264 行 AP=259.0280%、AR=259.0280%（拼接债务 AO=25271.425 £m）；1975/76：第 294 行 AP=52.4087%、AR=52.4087%（拼接债务 AO=71366.000 £m）；2007/08：第 326 行 AP=46.8786%、AR=46.8786%（拼接债务 AO=733300.000 £m）。AP 列共 317 个数值，最大值为 1945/46 的 259.0280%，次高为 1946/47 的 244.4243%；AR 列最大值同为 259.0280%。故“259% 为全序列峰值”由本列实测确认，不再是待定位项。1815/16 两列不同：AP=183.5629%，AR=213.6701%，正文采用的约 214% 属 AR（按相应政治边界，1816 年前用大不列颠 GDP）口径，本轮已在正文与时间表写明这一区分。另更正上一轮的配对错误：“25,921.6 £m” 是第 269 行＝1950/51 的 AF 列（该年 AP＝178.5129%），而 1945/46 的拼接口径债务（AO，含定期年金资本化估值）为 25271.425 £m，按 1945/46 的比率反推名义 GDP 约 9756.251 £m；此前“需名义 GDP 约 100,083 才自洽”是把不同年份、不同列的数值放在一起所致（25,898.65 亦为 1950/51 行的 AO 列）。因果句仍无来源：工作簿字符串层内 Napoleon 出现 0 次，唯一相关表注为“Note the debts of Great Britain and Ireland were consolidated in 1817”，故“拿破仑战争推高债务”在正文标为本文概括。</p> </div><div class="source"> <a href="https://fiscaldata.treasury.gov/datasets/historical-debt-outstanding/" rel="noopener noreferrer" target="_blank">Historical Debt Outstanding</a> <p>U.S. Department of the Treasury, Bureau of the Fiscal Service · U.S. Department of the Treasury</p> <p>访问：2026-10-30 · 许可：U.S. Government work (public domain), 17 U.S.C. §105</p> <p>支持论点：该美国财政部数据集支持本文引用的联邦债务总额：1790年71,060,508.50美元，1865年2,680,647,869.74美元，1919年27,390,970,113.12美元，1945年258,682,187,409.93美元，2025财年末37,637,553,494,935.61美元；均为各财年未偿总额，未按通胀调整。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/public-debt-and-fiscal-history/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

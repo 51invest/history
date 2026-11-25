@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>从边际效用到福利经济学：帕累托、庇古与阿罗 · 巫妖投资</title><meta name="description" content="福利经济学从“效用”出发，试图回答：什么样的资源配置算好？帕累托效率、庇古外部性和阿罗不可能定理，分别给出效率、公平和集体选择的边界。"><link rel="canonical" href="https://history.51invest.com/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/"><link rel="alternate" hreflang="zh-CN" href="https://history.51invest.com/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/"><link rel="alternate" hreflang="en" href="https://history.51invest.com/en/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/"><link rel="alternate" hreflang="x-default" href="https://history.51invest.com/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link" href="https://economics.51invest.com/"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link active" href="/" aria-current="page"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济与金融史</a> <span class="sep">/</span> <span aria-current="page">从边际效用到福利经济学：帕累托、庇古与阿罗</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">历史与人物</span> <h1 class="article-title">从边际效用到福利经济学：帕累托、庇古与阿罗</h1> <p class="article-summary">福利经济学从“效用”出发，试图回答：什么样的资源配置算好？帕累托效率、庇古外部性和阿罗不可能定理，分别给出效率、公平和集体选择的边界。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>HIS-M05 · 边际革命与新古典</strong></div> <div class="meta-item"><span>层级</span><strong>系统</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 15 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>问题与范围</h2>
+<p><strong>福利经济学</strong>研究资源配置、收入分配和政府政策对社会福利的影响。它从<strong>边际效用</strong>出发：同样一元钱，对穷人的效用高于富人，因此再分配可能提高总福利。</p>
+<p><strong>帕累托效率</strong>指无法在不损害任何人的情况下改善某人的配置；它是效率标准，不涉及公平。<strong>庇古</strong>关注外部性：工厂污染给第三方造成成本，市场价格未反映，需要税收或补贴纠正。</p>
+<p><strong>阿罗不可能定理</strong>指出：在满足若干合理条件下，不存在完美的集体选择规则；福利函数和投票规则都有取舍[1][2]。</p>
+<h2>算例</h2>
+<p>假设穷人月收入 1,000 元、富人 10,000 元；同样 100 元，对穷人的边际效用可能是富人的 3 倍。若转移 100 元，总效用增加；但转移有行政成本和激励影响。</p>
+<p>帕累托效率不要求平等：一个极度不平等的配置也可能是帕累托效率。庇古税把外部成本内部化：若污染社会成本 50 元/吨，税率应接近 50 元/吨，而不是企业私人成本。</p>
+<p>阿罗定理意味着：效率、公平和自由可能冲突；政策选择要明确价值判断和取舍。以上数字均为教学假设。</p>
+<h2>背景</h2>
+<p>福利经济学在 19 世纪末从功利主义和边际效用革命中形成。庇古 1920 年系统讨论外部性和收入再分配；二战后福利国家扩张，帕累托效率成为政策评估语言；阿罗 1951 年用社会选择理论指出集体偏好的聚合难题。此后森的能力方法、卡多尔—希克斯补偿原则和机制设计继续扩展边界。</p>
+<h2>原始材料与版本</h2>
+<p>原始文本包括边沁的功利主义著作、杰文斯和马歇尔的边际效用论述、庇古《福利经济学》（1920）、阿罗《社会选择与个人价值》（1951），以及帕累托的《社会学通论》。政策材料包括英国贝弗里奇报告、战后福利立法和各国税收与转移支付统计。读原文要注意：帕累托效率是描述性标准，阿罗定理有明确的公理前提，不能简化成“民主不可能”。</p>
+<h2>变化与边界</h2>
+<p><strong>边界一：效用不可直接比较。</strong> 个人效用是主观的，跨人比较需要假设；福利经济学用收入、健康等代理指标。</p>
+<p><strong>边界二：效率不等于公平。</strong> 帕累托效率可能伴随极端不平等；政策要在效率和公平之间选择。</p>
+<p><strong>边界三：集体选择没有完美规则。</strong> 阿罗定理说明投票和福利函数都有代价；程序正义和透明度同样重要。</p>
+<p>福利经济学不是“算出一个最优社会”，而是提供分析框架：识别市场失灵、评估分配后果、承认价值冲突[3][4]。</p>
+<h2>图表</h2>
+<figure>
+<svg role="img" aria-labelledby="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-1-title fig-marginal-utility-welfare-economics-pareto-pigou-arrow-1-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-1-title">从效用到集体选择</title>
+<desc id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-1-desc">四步：边际效用、帕累托效率、庇古外部性、阿罗定理。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">福利经济学的思想链</text>
+<text x="24" y="54" font-size="11" text-anchor="start">边际效用、帕累托、庇古、阿罗四步。</text>
+<rect x="14" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="69" y="140" font-size="12" text-anchor="middle">边际效用</text>
+<text x="69" y="184" font-size="12" text-anchor="middle" font-weight="700">主观</text>
+<rect x="136" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="191" y="140" font-size="12" text-anchor="middle">帕累托</text>
+<text x="191" y="184" font-size="12" text-anchor="middle" font-weight="700">效率</text>
+<rect x="258" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="313" y="140" font-size="12" text-anchor="middle">庇古</text>
+<text x="313" y="184" font-size="12" text-anchor="middle" font-weight="700">外部性</text>
+<rect x="380" y="116" width="110" height="88" rx="10" fill="currentColor" opacity=".08" stroke="currentColor" stroke-width="1.2"/>
+<text x="435" y="140" font-size="12" text-anchor="middle">阿罗</text>
+<text x="435" y="184" font-size="12" text-anchor="middle" font-weight="700">不可能</text>
+<line x1="125" y1="160" x2="135" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="247" y1="160" x2="257" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<line x1="369" y1="160" x2="379" y2="160" stroke="currentColor" stroke-width="1.4" opacity=".55"/>
+<text x="24" y="246" font-size="11" text-anchor="start">教学示意，不含统计数据。</text>
+</g>
+</svg>
+<figcaption>图 1：从效用到集体选择；教学示意。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-2-title fig-marginal-utility-welfare-economics-pareto-pigou-arrow-2-desc" viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-2-title">边际效用与收入</title>
+<desc id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-2-desc">两个收入水平的边际效用指数。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">不同收入水平的边际效用</text>
+<text x="24" y="54" font-size="11" text-anchor="start">穷人指数 3；富人指数 1；转移后总效用上升。</text>
+<line x1="178" y1="64" x2="178" y2="270" stroke="currentColor" stroke-width="1" opacity=".45"/>
+<text x="20" y="97" font-size="12">穷人</text>
+<rect x="178" y="78" width="360" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="95" font-size="12" font-weight="700">3</text>
+<text x="20" y="145" font-size="12">富人</text>
+<rect x="178" y="126" width="120" height="24" rx="5" fill="currentColor" opacity=".22" stroke="currentColor" stroke-width="1"/>
+<text x="554" y="143" font-size="12" font-weight="700">1</text>
+<text x="24" y="292" font-size="11" text-anchor="start">教学假设；单位：指数。</text>
+</g>
+</svg>
+<figcaption>图 2：边际效用与收入；教学假设。</figcaption>
+</figure>
+
+<figure>
+<svg role="img" aria-labelledby="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-3-title fig-marginal-utility-welfare-economics-pareto-pigou-arrow-3-desc" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg">
+<title id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-3-title">政策选择的二维矩阵</title>
+<desc id="fig-marginal-utility-welfare-economics-pareto-pigou-arrow-3-desc">两轴：效率、公平；四象限对应双高、效率优先、公平优先和双低。</desc>
+<g fill="currentColor">
+<text x="24" y="30" font-size="16" text-anchor="start">效率与公平的四类政策</text>
+<text x="24" y="54" font-size="11" text-anchor="start">高效率、高公平最理想；低效率、低公平最差。</text>
+<text x="40" y="68" font-size="11">效率高</text>
+<text x="40" y="286" font-size="11">效率低</text>
+<text x="110" y="314" font-size="11" text-anchor="middle">公平低</text>
+<text x="500" y="314" font-size="11" text-anchor="middle">公平高</text>
+<rect x="96" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="100" font-size="12" text-anchor="start">效率优先</text>
+<text x="108" y="130" font-size="11" text-anchor="start">高效率、低公平</text>
+<text x="108" y="170" font-size="11" font-weight="700">增长</text>
+<rect x="338" y="76" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="100" font-size="12" text-anchor="start">双高</text>
+<text x="350" y="130" font-size="11" text-anchor="start">高效率、高公平</text>
+<text x="350" y="170" font-size="11" font-weight="700">理想</text>
+<rect x="96" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="108" y="214" font-size="12" text-anchor="start">双低</text>
+<text x="108" y="244" font-size="11" text-anchor="start">低效率、低公平</text>
+<text x="108" y="284" font-size="11" font-weight="700">最差</text>
+<rect x="338" y="190" width="226" height="104" rx="8" fill="currentColor" opacity=".06" stroke="currentColor" stroke-width="1"/>
+<text x="350" y="214" font-size="12" text-anchor="start">公平优先</text>
+<text x="350" y="244" font-size="11" text-anchor="start">低效率、高公平</text>
+<text x="350" y="284" font-size="11" font-weight="700">再分配</text>
+</g>
+</svg>
+<figcaption>图 3：政策选择的二维矩阵；对比分类示意。</figcaption>
+</figure>
+
+<p>图 1 把边际效用、帕累托、庇古和阿罗串成福利链；图 2 比较不同收入水平的边际效用；图 3 用“效率—公平”两轴划出四类政策。图中数字均为教学假设。</p>
+<h2>边界与误解</h2>
+<p><strong>边界一：帕累托效率不是唯一标准。</strong> 它只看“不损害他人”，不看分配是否合理；需要公平和社会福利标准补充。</p>
+<p><strong>边界二：庇古税不是万能。</strong> 外部性难以精确测量，税率可能过高或过低；监管、产权和补偿也是工具。</p>
+<p><strong>边界三：阿罗定理不是“民主无用”。</strong> 它说明完美规则不存在，不是否定集体选择；现实制度用约束和程序降低冲突。</p>
+<p><strong>误解一：福利经济学等于社会主义。</strong> 它分析效率和分配，不预设制度；市场、政府和混合体制都可以用福利框架评估。</p>
+<p><strong>误解二：效率越高越公平。</strong> 效率与公平可能冲突；高效率配置可能伴随高不平等。</p>
+<h2>影响与遗产：从边际效用走向社会选择</h2>
+<p><strong>边际效用革命</strong>（杰文斯、门格、瓦尔拉斯，19 世纪 70 年代）把价值从“劳动时间”转向“主观满足”。商品的价值由最后一单位带来的效用决定；边际效用递减，解释了为什么水便宜、钻石贵，也为消费者选择和价格理论提供基础。</p>
+<p><strong>序数效用</strong>（希克斯、艾伦）进一步摆脱“效用可测量”的假设：只要知道偏好排序，就能推导需求；基数效用与序数效用的争论，影响了福利经济学能否做人际比较。</p>
+<p><strong>帕累托</strong>提出“最优”概念：无法在不损害他人的情况下改善某人。帕累托最优不等于公平，也不等于效率；它只描述配置的边界。<strong>庇古</strong>关注外部性和收入分配，提出庇古税和转移支付；<strong>阿罗</strong>证明社会选择函数难以同时满足一组合理公理（不可能定理）。</p>
+<p><strong>福利经济学</strong>的两次转变：第一，从“最大效用”转向“帕累托效率”；第二，从“效率”转向“公平、外部性和社会选择”。现代成本—收益分析、碳定价、庇古税都源于这条线索。</p>
+<p><strong>测量难题</strong>：效用无法直接观测，支付意愿受收入、信息和框架影响；社会福利函数的选择是价值判断，不是纯技术问题。</p>
+<p><strong>常见误用</strong>：把帕累托最优当成“最好”；把 GDP 当成福利；把成本—收益分析当成价值中立。效率与公平、个人偏好与社会选择之间，始终有规范判断。</p>
+<h2>史学争论与理论边界</h2>
+<p><strong>基数与序数之争</strong>：杰文斯和埃奇沃思假设效用可测量，希克斯和艾伦用序数偏好重构消费者理论；序数避免了人际比较，但也让“最大幸福”失去操作意义。福利经济学从此更依赖配置效率，而不是效用总量。</p>
+<p><strong>帕累托的局限</strong>：帕累托最优不唯一，也不公平；不同的初始分配会给出不同的最优配置。把帕累托最优当成政策目标，会忽略分配正义。</p>
+<p><strong>庇古与外部性</strong>：庇古税假设政府知道外部成本并正确征税；现实中外部性难以测量，税收可能被俘获。科斯则强调产权和交易成本，认为市场可以谈判解决，但谈判本身有成本。</p>
+<p><strong>阿罗不可能定理</strong>：社会福利函数要同时满足一致性、传递性、无关备选独立性等公理，几乎不可能；这不是“民主不可能”，而是“偏好聚合有内在张力”。</p>
+<p><strong>行为福利经济学</strong>：卡尼曼和塞勒等指出，人们的选择受框架、参照点和有限注意力影响；福利不能只看支付意愿，还要看选择和体验的差异。</p>
+<p><strong>能力方法</strong>（森）：福利不只是效用或收入，而是“能做什么、成为什么”；这为人类发展指数和多维贫困提供基础。</p>
+<p><strong>方法</strong>：理论争论要用反例和公理检验，政策应用要看测量和制度。福利经济学不是价值中立，它选择哪些福利维度，本身就是规范判断。</p>
+<h2>事后偏差</h2>
+<p>事后最容易犯的错，是把帕累托效率当成“好社会”的完整标准。一个极端不平等的配置也可能帕累托有效；效率不回答谁值得帮助。另一个错是把阿罗定理读成“投票无意义”，它实际说明在序数信息和若干公理下不存在完美聚合规则，现实制度用限制议程、宪法法院和公共辩论来缓解。福利判断必须同时说明效率、分配和价值前提。</p>
+<h2>反证条件</h2>
+<p>福利经济学的结论依赖效用比较和公理前提：</p>
+<ol>
+<li><strong>效用可基数比较。</strong> 若效用能被可靠地跨人比较，帕累托之外的福利判断会更有操作空间。</li>
+<li><strong>权利优先于效率。</strong> 若把自由、权利和程序正义放在效率之前，帕累托改进不再是唯一标准。</li>
+<li><strong>阿罗公理被放松。</strong> 若允许基数信息、限制议程或引入 deliberative 程序，集体选择的可能空间会扩大。</li>
+<li><strong>补偿原则可执行。</strong> 若 Kaldor-Hicks 补偿真的支付，效率改进的分配后果会被修正。</li>
+</ol>
+<p><strong>实践含义：</strong> 福利判断要写明效率、分配和价值前提；帕累托效率不是“好社会”的同义词，阿罗定理也不是“民主不可能”。</p>
+<p><strong>数据附注：</strong> 区分序数效用和基数效用、效率标准和分配标准；阿罗定理的结论依赖公理选择，不能跨版本混用。</p>
+<p><strong>范围说明：</strong> 明确公理集和效用假设；不同版本的阿罗定理不能混用，帕累托效率也要说明是否伴随补偿。</p>
+<p><strong>最后：</strong> 比较定理前先写明公理集；不同版本的阿罗定理和帕累托标准不能直接互换。</p>
+<p><strong>核对：</strong> 比较任何两个定理前，先写明公理集和补偿假设。</p>
+<p><strong>记录：</strong> 并记下选择。</p>
+<h2>练习</h2>
+<ol>
+<li><p>说明边际效用与福利的关系。</p>
+</li>
+<li><p>穷人 1,000 元、富人 10,000 元，100 元转移为何可能提高总效用？</p>
+</li>
+<li><p>帕累托效率要求平等吗？</p>
+</li>
+<li><p>庇古税如何内部化外部性？</p>
+</li>
+<li><p>阿罗定理说明了什么？</p>
+</li>
+<li><p>效率与公平为什么可能冲突？</p>
+</li>
+<li><p>判断：福利经济学等于社会主义吗？说明理由。</p>
+</li>
+<li><p>边际效用递减如何解释水与钻石的价格差异？</p>
+</li>
+<li><p>帕累托最优为什么既不代表公平，也不代表效率？</p>
+</li>
+<li><p>序数效用为什么让“最大幸福”失去操作意义？</p>
+</li>
+<li><p>阿罗不可能定理说明了什么，不说明什么？</p>
+</li>
+</ol>
+<h2>本章要点</h2>
+<ul>
+<li>边际效用递减解释了相对价格，但效用本身不可直接观测。</li>
+<li>序数效用让消费者理论摆脱基数假设，也让人际效用比较失去基础。</li>
+<li>帕累托最优描述配置边界，不描述公平，也不唯一。</li>
+<li>庇古税处理外部性，阿罗定理揭示偏好聚合的内在张力。</li>
+<li>福利经济学选择哪些维度，本身就是规范判断。</li>
+</ul>
+<h2>关联</h2>
+<p>先修 HIS-006；对照 ECO-001；相邻 ECO-021、HIS-038。</p>
+<h2>来源</h2>
+<ol>
+<li>David Ricardo, <em>On the Principles of Political Economy and Taxation</em>. Econlib (3rd edition, 1821; original work published 1817), accessed 2026-10-30. <a href="https://www.econlib.org/library/Ricardo/ricP.html">https://www.econlib.org/library/Ricardo/ricP.html</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 13.3 Public Goods</em>. OpenStax, accessed 2026-10-30. <a href="https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods">https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 15.4 Income Inequality: Measurement and Causes</em>. OpenStax, accessed 2026-11-03. <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes">https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes</a></li>
+<li>Steven A. Greenlaw; David Shapiro; Daniel MacDonald, <em>Principles of Economics 3e, 15.5 Government Policies to Reduce Income Inequality</em>. OpenStax, accessed 2026-11-03. <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality">https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality</a></li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>说明边际效用与福利的关系。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>区分帕累托效率、外部性和公平。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>说明边际效用与福利的关系。</li><li>区分帕累托效率、外部性和公平。</li><li>解释阿罗不可能定理对集体选择的限制。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/formation-of-marxist-economics/">HIS-006 · 马克思主义经济学的形成</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="https://economics.51invest.com/learn/what-economics-studies/">ECO-001 · 经济学研究什么</a> </li><li> <a href="https://economics.51invest.com/learn/balance-of-payments/">ECO-021 · 国际收支</a> </li><li> <a href="/learn/socialist-calculation-debate-prices-planning-information/">HIS-038 · 社会主义核算之争：价格、计划与信息</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://www.econlib.org/library/Ricardo/ricP.html" rel="noopener noreferrer" target="_blank">On the Principles of Political Economy and Taxation</a> <p>David Ricardo · Econlib (3rd edition, 1821; original work published 1817)</p> <p>访问：2026-10-30 · 许可：Liberty Fund / Online Library of Liberty: cited and linked only, site terms not confirmed</p> <p>支持论点：支持地租、分配与政治经济学的基础框架。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/13-3-public-goods" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 13.3 Public Goods</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-10-30 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支持公共品、非排他性与市场失灵。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-4-income-inequality-measurement-and-causes" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.4 Income Inequality: Measurement and Causes</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支持收入不平等、测量与成因。</p> </div><div class="source"> <a href="https://openstax.org/books/principles-economics-3e/pages/15-5-government-policies-to-reduce-income-inequality" rel="noopener noreferrer" target="_blank">Principles of Economics 3e, 15.5 Government Policies to Reduce Income Inequality</a> <p>Steven A. Greenlaw; David Shapiro; Daniel MacDonald · OpenStax</p> <p>访问：2026-11-03 · 许可：CC BY-NC-SA 4.0</p> <p>支持论点：支持再分配政策、税收与转移支付。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/marginal-utility-welfare-economics-pareto-pigou-arrow/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>

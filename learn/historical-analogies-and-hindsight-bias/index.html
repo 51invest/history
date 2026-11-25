@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light" data-theme-mode="auto"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>历史类比与事后偏差 · 巫妖投资</title><meta name="description" content="历史类比要先比较机制、制度和规模，再讨论“像不像”；知道结果会让人高估当时的可预测性。"><link rel="canonical" href="https://history.51invest.com/learn/historical-analogies-and-hindsight-bias/"><link rel="alternate" hreflang="zh-CN" href="https://history.51invest.com/learn/historical-analogies-and-hindsight-bias/"><link rel="alternate" hreflang="en" href="https://history.51invest.com/en/learn/historical-analogies-and-hindsight-bias/"><link rel="alternate" hreflang="x-default" href="https://history.51invest.com/learn/historical-analogies-and-hindsight-bias/"><link rel="icon" type="image/png" href="/_astro/neutral.Dr5C2SoA.png"><script>
+  (() => {
+    const root = document.documentElement;
+    const readCookie = key => {
+      try {
+        return document.cookie.split('; ').find(value => value.startsWith(`51invest-${key}=`))?.split('=').slice(1).join('=') ?? null;
+      } catch {
+        return null;
+      }
+    };
+    const readLocal = key => {
+      try {
+        return localStorage.getItem(`51invest-${key}`);
+      } catch {
+        return null;
+      }
+    };
+    const storedTheme = readCookie('theme') || readLocal('theme');
+    const mode = ['light', 'dark', 'auto'].includes(storedTheme) ? storedTheme : 'auto';
+    const media = matchMedia('(prefers-color-scheme: dark)');
+    const apply = () => {
+      root.dataset.theme = mode === 'auto' ? (media.matches ? 'dark' : 'light') : mode;
+      root.dataset.themeMode = mode;
+    };
+    apply();
+    media.addEventListener('change', () => {
+      if (root.dataset.themeMode === 'auto') apply();
+    });
+  })();
+</script><link rel="stylesheet" href="/_astro/Base.CocbJOeh.css"></head> <body>  <a class="skip-link" href="#main">跳到正文</a> <header class="site-header"> <div class="container header-inner"> <a class="brand" href="https://51invest.com/" data-main-home aria-label="巫妖投资"> <span class="brand-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="36" height="36" alt class="mascot" loading="lazy" decoding="async"></span> <span class="brand-copy"> <span class="brand-name">巫妖投资</span> <span class="brand-caption">51INVEST</span> </span> </a> <nav class="desktop-nav" aria-label="知识分站"> <a class="nav-link" href="https://51invest.com/" data-main-home> 首页 </a> <a class="nav-link" href="https://economics.51invest.com/"> 经济学 </a><a class="nav-link" href="https://finance.51invest.com/"> 金融基础 </a><a class="nav-link" href="https://markets.51invest.com/"> 市场与产品 </a><a class="nav-link" href="https://invest.51invest.com/"> 投资方法 </a><a class="nav-link active" href="/" aria-current="page"> 经济与金融史 </a><a class="nav-link" href="https://research.51invest.com/"> 研究方法 </a> <a class="nav-link" href="https://51invest.com/contents/"> 内容地图 </a> </nav> <div class="header-tools"> <a class="icon-button language-button" href="/en/learn/historical-analogies-and-hindsight-bias/" hreflang="en" lang="en" data-language-link="en" aria-label="切换为英文" title="切换为英文"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> <button class="icon-button theme-button" type="button" data-theme-toggle aria-label="主题: 跟随系统" title="主题: 跟随系统" data-label-auto="主题: 跟随系统" data-label-light="主题: 浅色" data-label-dark="主题: 深色"> <span class="theme-icon" data-theme-icon="auto"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>        <circle cx="12" cy="12" r="8.5"></circle><path d="M12 3.5v17"></path><path d="M12 7a5 5 0 0 1 0 10" fill="currentColor" stroke="none"></path> </svg></span> <span class="theme-icon" data-theme-icon="light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>       <circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>  </svg></span> <span class="theme-icon" data-theme-icon="dark"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>      <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>   </svg></span> <span class="theme-text" data-theme-text="auto">跟随系统</span> <span class="theme-text" data-theme-text="light">浅色</span> <span class="theme-text" data-theme-text="dark">深色</span> </button> </div> </div> </header> <main id="main" class="site-main" data-pagefind-body>  <div class="reading-progress" data-reading-progress aria-hidden="true"><span></span></div> <div class="container"> <nav class="breadcrumbs" aria-label="Breadcrumb"> <a href="https://51invest.com/" data-main-home>首页</a> <span class="sep">/</span> <a href="/">经济与金融史</a> <span class="sep">/</span> <span aria-current="page">历史类比与事后偏差</span> </nav> </div> <article> <header class="article-header"> <div class="container"> <span class="article-type">历史与人物</span> <h1 class="article-title">历史类比与事后偏差</h1> <p class="article-summary">历史类比要先比较机制、制度和规模，再讨论“像不像”；知道结果会让人高估当时的可预测性。</p>  <div class="meta-grid"> <div class="meta-item"><span>模块</span><strong>HIS-M01 · 史料与研究方法</strong></div> <div class="meta-item"><span>层级</span><strong>入门</strong></div> <div class="meta-item"><span>阅读</span><strong>9 分钟 · 15 节</strong></div> </div> <p class="demo-jump"> <a href="#demo-check"> 这篇有一个可以动手操作的演示 <span aria-hidden="true">↓</span> </a> </p> </div> </header> <div class="container article-layout"> <div class="article-body"> <h2>问题与范围</h2>
+<p>“这次像 1929 年”或“这次和 2008 年一样”是常见的判断。历史类比可以帮助提出问题和列出机制，也可能把表面相似误当成因果相同。本文说明如何用机制、制度、规模和时点比较历史事件，如何识别事后偏差，以及如何为类比写出可反驳条件。本文不判断某次危机是否必然重演，也不把历史当作政策或投资的直接证据。</p>
+<h2>背景</h2>
+<p>本文不讨论两次危机本身，只讨论“用一次危机去理解另一次危机”的阅读习惯。1929 一侧的可核对事实是：到 1929 年 11 月中旬，道琼斯指数已几乎腰斩（原话为 lost almost half of its value，指指数点位），而美联储的行动与金本位等因素对随后的全球衰退产生了非预期影响[2]。2008 一侧的可核对事实是：衰退期为 2007 年 12 月至 2009 年 6 月，美国实际 GDP 从峰值到谷值累计下降约 4.3%，美联储把联邦基金利率目标区间降到 0–0.25%，随后使用前瞻指引与资产购买[3]。
+两次危机被放在一起比较，制度条件已经不同：1929 时的政策工具与金本位约束，和 2008 时的零利率下限、非常规工具与披露体系不是同一套。背景部分的用途就是把“可比较的”与“不可比较的”先分开，再进入材料与类比检查。</p>
+<h2>原始材料与时间线</h2>
+<table>
+<thead>
+<tr>
+<th>事件</th>
+<th>时间范围</th>
+<th>可核对的事实</th>
+<th>阅读时要问</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1929 年股市崩盘</td>
+<td>至 1929-11 中旬</td>
+<td>到 1929 年 11 月中旬，道琼斯指数已几乎腰斩（来源原话为 lost almost half of its value，指指数点位，不是总市值）；美联储的行动与金本位等因素对随后的全球衰退产生了非预期影响</td>
+<td>当时的政策工具、制度约束和信息是什么？</td>
+</tr>
+<tr>
+<td>2008 年金融危机</td>
+<td>2007-12 至 2009-06（利率决议 2008-12）</td>
+<td>衰退期为 2007 年 12 月至 2009 年 6 月；美国<strong>实际</strong> GDP 从 2007Q4 峰值到 2009Q2 谷值累计下降 4.3%；2008 年 12 月美联储把联邦基金利率目标区间降到 0–0.25%，随后使用前瞻指引与资产购买</td>
+<td>哪些工具和制度与 1929 年不同？</td>
+</tr>
+</tbody></table>
+<p>这些只是官方历史材料的摘要，不是完整的因果解释。不同研究对危机原因、政策效果和责任分配有不同看法；类比不能替代对具体机制和证据的阅读。</p>
+<p>时间线中 1929 一侧的可核对事实取自美联储的历史材料：股市崩盘使道琼斯指数市值减半，美联储的行动与金本位等因素对随后的全球衰退产生了非预期影响[2]。</p>
+<h2>事后偏差</h2>
+<p>Fischhoff 的经典研究表明：知道结果会改变人们对事前可预测性的判断[1]。事后看来“显而易见”的风险，在当时可能只是众多不确定信号之一。事后偏差会带来两种错误：</p>
+<ol>
+<li><strong>把结果当成必然。</strong> 认为“事情只能这样发展”，忽略当时的分岔和偶然。</li>
+<li><strong>把决策质量等同于结果。</strong> 好决策可能遇到坏结果，坏决策也可能碰巧成功；评价决策应看当时可获得的信息、目标和约束。</li>
+</ol>
+<p>减少事后偏差的方法：重建当时的信息集、时间压力、制度约束和替代方案；明确哪些判断在当时可以合理作出，哪些只有事后才知道；把“结果”与“过程”分开记录。</p>
+<h2>类比检查</h2>
+<p>一个可用的历史类比至少应比较：</p>
+<ul>
+<li><strong>机制</strong>：冲击如何传导到价格、现金流、资产负债表和政策？</li>
+<li><strong>制度</strong>：法律、监管、货币政策框架、汇率制度和救助安排是否相似？</li>
+<li><strong>规模与结构</strong>：杠杆、期限错配、集中度和全球联系是否可比？</li>
+<li><strong>时点与信息</strong>：当时的数据、预期和决策速度如何？</li>
+<li><strong>差异</strong>：哪些关键条件不同？这些差异会改变结论吗？</li>
+<li><strong>可反驳条件</strong>：出现什么证据时，这个类比应当被放弃？</li>
+</ul>
+<p>不能只用“都出现股市下跌”“都发生衰退”来支持类比；这些是结果标签，不是机制。也不能用“这次不一样”作为免检口号；差异同样需要具体说明。</p>
+<h2>主要争论</h2>
+<p>本文登记的来源只给出事实性描述：崩盘的幅度、金本位与政策行动的非预期影响[2]，衰退的时间、GDP 降幅与政策工具[3]。对这些事实“应当如何解释”——危机的主因、政策效果的强弱、责任如何分配——不同研究给出不一致的结论，而这三种解释都不在上述 supports 的范围内。
+所以这一节不复述某一派结论；它给出标记解释差异的方法：写下事实时注明来源与口径；写下解释时注明是哪一支研究或评论，并给出它对同一材料的替代解释；把“责任分配”这类规范判断与可核对陈述分开。做不到这三步的类比，只能作为直觉，不能作为论证。</p>
+<h2>影响与延续</h2>
+<p>1929 的读数如何延续到后来的制度与做法，可以沿三条可核对的线索追踪：政策工具箱的变化（2008 年出现的前瞻指引与资产购买，在 1929 的制度条件下并不存在[2][3]）；对央行行动与金本位相互作用的非预期后果的持续讨论[2]；以及事后偏差研究对“用结果评价事前判断”这一习惯的持续修正[1]。
+这三条线索分别属于制度史、思想与方法三个层面，读者在引用“历史教训”时应说明引用的是哪一层：制度层面的教训可以转化为规则与工具，方法层面的教训（不要用结果反推可预测性）约束的是所有分析，而不只是政策分析。</p>
+<h2>例子</h2>
+<p>1929 年和 2008 年都出现了严重的股市下跌和衰退，这是表面相似。但两次事件的制度与政策工具不同：1929 年处于金本位和不同的货币政策框架，2008 年美联储将利率降至零并使用前瞻指引和资产购买。全球金融联系、数据可得性和政策协调也不同。这些差异不意味着两次事件毫无共同点，但意味着不能把 1929 年的政策结论直接搬到 2008 年，反之亦然。
+把学习目标里的四项比较逐条落到本例：机制上，两次都经由资产价格下跌与信贷收缩传导，这一条相似；制度上，1929 年受金本位与当时的货币框架约束，2008 年面对零利率下限只能改用前瞻指引与资产购买，政策反应函数（这里指央行面对通胀与产出缺口时加息或降息的行为规律）因此不可直接比。规模上，两次都出现“接近腰斩”的股市跌幅，但可比较的经济与金融规模并不同量级，跌幅相同不等于规模相同；时点上，两个年代可得到的数据、发布频率与决策速度不同（这正是上文列为差异的一项），所以不能把两次政策反应排成优劣顺序。上述比较只说明差异的方向与种类，不构成“某次危机必然重演”的判断，也不新增来源未记载的事实。</p>
+<p>2008 一侧同样取自美联储历史材料：2007 年 12 月至 2009 年 6 月的衰退中美国 GDP 下降约 4.3%，美联储将利率降至零，并使用前瞻指引与资产购买[3]。</p>
+<h2>局限</h2>
+<ul>
+<li>历史数据会修订，统计口径和制度定义会变化；比较前要核对版本。</li>
+<li>事件选择本身有偏差：先知道结果，再挑选“相似”的案例，容易忽略反例。</li>
+<li>制度和政策会学习，历史关系可能发生结构变化。</li>
+<li>类比是提出机制和检验假设的工具，不是因果识别；需要独立证据。</li>
+<li>单一案例不能估计概率，也不能证明“必然发生”。</li>
+</ul>
+<h2>阅读与验证步骤</h2>
+<ol>
+<li>写下要回答的问题，避免从结果倒推原因。</li>
+<li>按机制而不是结果选择比较对象，并说明选择标准。</li>
+<li>列出相似点和差异点，逐项标注证据来源。</li>
+<li>重建当时可得的信息、约束和替代方案，检查事后偏差。</li>
+<li>说明类比支持什么、不支持什么，以及可反驳条件。</li>
+<li>区分决策过程与结果，记录不确定性。</li>
+<li>用反例和替代解释检验类比，不只找支持自己的材料。</li>
+</ol>
+<h2>图表</h2>
+<figure>
+  <svg role="img" aria-labelledby="fig-his-002-chain-title fig-his-002-chain-desc" viewBox="0 0 560 310" width="100%">
+    <title id="fig-his-002-chain-title">历史类比与事后偏差：三段判断链</title>
+    <desc id="fig-his-002-chain-desc">选事件：先把两次事件的边界写清；比机制：制度、杠杆、政策与规模；再下结论：类比的边界比相似点更重要</desc>
+    <rect x="0.5" y="0.5" width="559" height="309" rx="12" fill="var(--surface)" stroke="var(--border)"/>
+    <rect x="24" y="16" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="16" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="35" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">起点</text>
+    <text x="44" y="56" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">选事件</text>
+    <text x="44" y="76" font-size="10.5" fill="var(--secondary)" font-family="inherit">先把两次事件的边界写清</text>
+    <line x1="280" y1="102" x2="280" y2="108" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M276 106 L280 110 L284 106" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="24" y="112" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="112" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="131" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">机制</text>
+    <text x="44" y="152" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">比机制</text>
+    <text x="44" y="172" font-size="10.5" fill="var(--secondary)" font-family="inherit">制度、杠杆、政策与规模</text>
+    <line x1="280" y1="198" x2="280" y2="204" stroke="var(--border)" stroke-width="1.5"/>
+    <path d="M276 202 L280 206 L284 202" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+    <rect x="24" y="208" width="512" height="86" rx="10" fill="var(--surface-2)" stroke="var(--border)" stroke-width="1"/>
+    <rect x="24" y="208" width="5" height="86" rx="2.5" fill="var(--accent)"/>
+    <text x="44" y="227" font-size="9.5" letter-spacing="1.1" fill="var(--accent)" font-family="inherit">判断</text>
+    <text x="44" y="248" font-size="13" font-weight="650" fill="var(--text)" font-family="inherit">再下结论</text>
+    <text x="44" y="268" font-size="10.5" fill="var(--secondary)" font-family="inherit">类比的边界比相似点更重要</text>
+  </svg>
+  <figcaption>图 1：历史类比与事后偏差的三段判断链——选事件 → 比机制 → 再下结论。三段是判断链，不是唯一路径；图中文字取自本文正文，不含统计数据。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>关联</h2>
+<ul>
+<li>必需先修：如何读经济史与思想史（HIS-001）。</li>
+<li>相关与推荐阅读：如何读经济史与思想史（HIS-001）、泡沫危机比较阅读（HIS-024）、回测与前视偏差（RES-020）。</li>
+</ul>
+<h2>图解</h2>
+<p>下面三张图分别检查本文的机制、边界与对照；图内文字取自本文小节，不是新数据。</p>
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-timeline-title fig-batch-timeline-desc" viewBox="0 0 340 300" width="100%">
+    <title id="fig-batch-timeline-title">历史类比与事后偏差：时间线</title>
+    <desc id="fig-batch-timeline-desc">按背景、变化、结果、影响四段串起本文论证；不是历史年表，也不把先后当成因果。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">历史类比与事后偏差：阶段，不是阶段</text>
+    <text x="14" y="38" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">四段帮助定位论证；先后顺序本身不证明因果。</text>
+    <line x1="14" y1="48" x2="326" y2="48" stroke="var(--border)" stroke-width="1"/>
+    <g>
+      <circle cx="48" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="48" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">背景</text>
+      <rect x="14" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="19" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">背景</text>
+      <text x="19" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文不讨论两次</text>
+      <text x="19" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">危机本身，只讨</text>
+      <text x="19" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">论“用一次危机</text>
+      <text x="19" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">去理解另一次危</text>
+      <text x="19" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">机”的阅读习惯…</text>
+    </g>
+    <g>
+      <circle cx="128" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="128" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">变化</text>
+      <rect x="94" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="99" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">问题与范围</text>
+      <text x="99" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">问题与范围：“</text>
+      <text x="99" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">这次像 1929</text>
+      <text x="99" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">年”或“这次和</text>
+      <text x="99" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">2008 年一样”</text>
+      <text x="99" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">是常见的判断。…</text>
+    </g>
+    <g>
+      <circle cx="208" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="208" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">结果</text>
+      <rect x="174" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="179" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">例子</text>
+      <text x="179" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">年和 2008</text>
+      <text x="179" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">年都出现了严重</text>
+      <text x="179" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">的股市下跌和衰</text>
+      <text x="179" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">退，这是表面相</text>
+      <text x="179" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">似。但两次事件…</text>
+    </g>
+    <g>
+      <circle cx="288" cy="74" r="7" fill="var(--accent-soft)" stroke="var(--accent)"/>
+      <text x="288" y="98" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">影响</text>
+      <rect x="254" y="108" width="68" height="122" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+      <text x="259" y="126" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">主要争论</text>
+      <text x="259" y="156" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文登记的来源</text>
+      <text x="259" y="171" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">只给出事实性描</text>
+      <text x="259" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">述：崩盘的幅度</text>
+      <text x="259" y="201" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">、金本位与政策</text>
+      <text x="259" y="216" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">行动的非预期影…</text>
+    </g>
+    <line x1="55" y1="74" x2="121" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="135" y1="74" x2="201" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="215" y1="74" x2="281" y2="74" stroke="var(--border)" stroke-width="1"/>
+    <line x1="14" y1="246" x2="326" y2="246" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="262" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">读法：先问每一段有没有真的发生，再问相邻两段之间有没有机制。</text>
+    <text x="14" y="276" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">没有机制时，只能写“先后”，不能写“导致”。</text>
+    <text x="14" y="290" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为结构示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 2：历史类比与事后偏差的时间线：背景、变化、结果与影响。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-boundary-title fig-batch-boundary-desc" viewBox="0 0 340 244" width="100%">
+    <title id="fig-batch-boundary-title">历史类比与事后偏差：适用边界</title>
+    <desc id="fig-batch-boundary-desc">把成立条件与失效条件分开；局部例子不能自动推广到所有情形。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">历史类比与事后偏差：什么情况下成立？</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <rect x="14" y="44" width="312" height="38" rx="7" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="170" y="62" font-size="8.8" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="middle">先检查条件，再看结论</text>
+    <text x="170" y="75" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="middle">条件、口径或样本一变，结论可能要重算</text>
+    <line x1="170" y1="82" x2="90" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <line x1="170" y1="82" x2="250" y2="104" stroke="var(--border)" stroke-width="1.1"/>
+    <rect x="14" y="104" width="148" height="100" rx="8" fill="var(--surface-2)" stroke="var(--border)"/>
+    <text x="24" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">成立</text>
+    <text x="24" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">历史数据会修订，统计口径和制度定</text>
+      <text x="24" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">义会变化；比较前要核对版本。</text>
+    <rect x="178" y="104" width="148" height="100" rx="8" fill="var(--gold)" opacity="0.18" stroke="var(--border)"/>
+    <text x="188" y="122" font-size="8.6" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">不成立 / 需改写</text>
+    <text x="188" y="138" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文登记的来源只给出事实性描述：</text>
+      <text x="188" y="154" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">崩盘的幅度、金本位与政策行动的非</text>
+      <text x="188" y="170" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">预期影响，衰退的时间、GDP</text>
+      <text x="188" y="186" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">降幅与政策工具。对这些事实“应当…</text>
+    <line x1="14" y1="216" x2="326" y2="216" stroke="var(--border)" stroke-width="1"/>
+    <text x="14" y="232" font-size="8.3" fill="var(--muted)" font-family="inherit" text-anchor="start">图为边界示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 3：历史类比与事后偏差的边界：哪些条件成立，哪些条件失效。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<figure>
+  <svg role="img" aria-labelledby="fig-batch-compare-title fig-batch-compare-desc" viewBox="0 0 340 252" width="100%">
+    <title id="fig-batch-compare-title">历史类比与事后偏差：对象、前提与常见误区</title>
+    <desc id="fig-batch-compare-desc">三行比较本文概念、成立条件与常见误区；比较不等于等价，也不能替代定义。</desc>
+    <text x="14" y="22" font-size="10.5" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">历史类比与事后偏差：一张表看对象、前提与误区</text>
+    <line x1="14" y1="34" x2="326" y2="34" stroke="var(--border)" stroke-width="1"/>
+    <text x="82" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">本篇</text>
+    <text x="200" y="46" font-size="8.4" font-weight="650" fill="var(--text)" font-family="inherit" text-anchor="start">容易混淆</text>
+    <g>
+      <rect x="14" y="52" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="72" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">对象</text>
+      <text x="82" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">历史类比要先比较机制、制</text>
+      <text x="82" y="88" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">度和规模，再讨论“像不像”…</text>
+      <text x="200" y="72" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相邻概念/常见说法</text>
+    </g>
+    <g>
+      <rect x="14" y="110" width="312" height="58" fill="var(--surface-2)" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="130" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">前提</text>
+      <text x="82" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">历史数据会修订，统计口径</text>
+      <text x="82" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">和制度定义会变化；比较前…</text>
+      <text x="200" y="130" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">本文登记的来源只给出事实性描述：崩盘</text>
+      <text x="200" y="146" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">的幅度、金本位与政策行动的非预期影响…</text>
+    </g>
+    <g>
+      <rect x="14" y="168" width="312" height="58" fill="transparent" stroke="var(--border)" stroke-width="0.7"/>
+      <text x="22" y="188" font-size="8.4" font-weight="650" fill="var(--muted)" font-family="inherit" text-anchor="start">检查</text>
+      <text x="82" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">先定义，再比较；不能只看</text>
+      <text x="82" y="204" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">名称</text>
+      <text x="200" y="188" font-size="8.4" fill="var(--text)" font-family="inherit" text-anchor="start">相关不等于因果，局部不等于普遍</text>
+    </g>
+    <text x="14" y="244" font-size="8.2" fill="var(--muted)" font-family="inherit" text-anchor="start">图为比较示意；样本为本文论证，单位为文中标注。</text>
+  </svg>
+  <figcaption>图 4：历史类比与事后偏差的对象、前提与常见误区比较。样本为本文论证，单位为文中标注。</figcaption>
+</figure>
+
+<h2>练习</h2>
+<ol>
+<li><strong>相似与差异。</strong> 1929 年和 2008 年都出现股市下跌和衰退。请各举一个相似点和一个制度/政策差异，并说明差异为什么重要。</li>
+<li><strong>事后判断。</strong> “政策制定者本应知道会出事。”要评价这句话，需要重建哪些当时的信息和约束？</li>
+<li><strong>可反驳条件。</strong> 如果你用 1929 年类比当前市场，出现什么证据会让你放弃这个类比？</li>
+</ol>
+<details>
+<summary>参考答案</summary>
+
+<ol>
+<li>相似点可以是严重的股市下跌和衰退；差异可以是 1929 年的金本位与 2008 年的零利率、前瞻指引和资产购买。差异重要，因为政策工具、传导机制和约束不同，不能直接套用同一政策结论。</li>
+<li>需要当时可获得的数据、发布时滞、对金融机构和资产负债表的认知、政治与法律约束、政策工具的限制，以及决策者面对的替代方案；不能用事后才知道的结果评价。</li>
+<li>例如：关键传导机制不存在、制度约束完全不同、杠杆和期限错配程度不可比、政策反应函数不同，或反例显示相似机制没有产生类似结果。具体条件应在分析前写明。</li>
+</ol>
+</details>
+
+<h2>来源</h2>
+<ol>
+<li>Fischhoff, Baruch. “Hindsight is not equal to foresight: The effect of outcome knowledge on judgment under uncertainty.” <em>Journal of Experimental Psychology: Human Perception and Performance</em> 1, no. 3 (1975): 288–299. <a href="https://doi.org/10.1037/0096-1523.1.3.288">https://doi.org/10.1037/0096-1523.1.3.288</a>（访问日期：2026-10-30）</li>
+<li>Federal Reserve History. “Stock Market Crash of 1929.” <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929">https://www.federalreservehistory.org/essays/stock-market-crash-of-1929</a>（访问日期：2026-10-30）</li>
+<li>Federal Reserve History. “The Great Recession.” <a href="https://www.federalreservehistory.org/essays/great-recession-of-200709">https://www.federalreservehistory.org/essays/great-recession-of-200709</a>（访问日期：2026-10-30）</li>
+</ol>
+  <section class="article-demo" id="demo-check" data-demo="check" data-lang="zh" aria-labelledby="demo-check-title" data-check-done="三项都能说清：这篇的核心已经过关。" data-check-pending="还差一项：回到正文对应小节，找一个反例或数字再讲一遍。" data-check-count="已勾选"> <header class="demo-head"> <div class="demo-head-top"> <p class="demo-eyebrow">动手演示</p> <button class="demo-reset" type="button" data-demo-reset>恢复默认</button> </div> <h2 id="demo-check-title">读完自检：三句话能不能说清</h2> <p class="demo-intro">不用背定义。把下面三句逐个勾上，看自己能不能用自己的话讲清机制、算例和边界。</p> </header>          <div class="demo-check"> <ul class="demo-check-list"> <li> <label> <input type="checkbox" data-check-index="0"> <span>说明事后偏差如何让历史结果看起来比当时更可预测。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="1"> <span>用机制、制度、规模和时点比较历史类比，而不是只看表面相似。</span> </label> </li><li> <label> <input type="checkbox" data-check-index="2"> <span>能说出一个本文结论不适用的条件</span> </label> </li> </ul> <p class="demo-check-status" data-out="checkStatus" role="status"> 已勾选 0 / 3
+</p> </div> <p class="demo-footnote">数字为教学假设，用来展示关系，不构成预测或投资建议。</p> </section><script type="module" src="/_astro/ArticleDemo.astro_astro_type_script_index_0_lang.C9VQAsQ0.js"></script> <p class="notice"> 本文已通过当前发布门槛；事实、计算与译文如有修订，会同步更新两个语言版本。 </p> <p> <a class="button secondary" href="/"> <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class> <path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path>        </svg>返回分站 </a> </p> </div> <aside class="article-aside" aria-label="文章信息"> <section class="aside-card"> <h2>学习目标</h2> <ul> <li>说明事后偏差如何让历史结果看起来比当时更可预测。</li><li>用机制、制度、规模和时点比较历史类比，而不是只看表面相似。</li><li>为类比写出可反驳条件和不确定性，避免把历史当作政策或投资的直接证据。</li> </ul> </section> <section class="aside-card"> <h2>必需先修</h2> <ul> <li> <a href="/learn/reading-economic-history/">HIS-001 · 如何读经济史与思想史</a> </li> </ul> </section> <section class="aside-card"> <h2>建议阅读</h2> <ul> <li> <a href="/learn/reading-economic-history/">HIS-001 · 如何读经济史与思想史</a> </li><li> <a href="/learn/bubbles-and-crises-comparison/">HIS-024 · 泡沫危机比较阅读</a> </li><li> <a href="https://research.51invest.com/learn/backtesting-and-look-ahead-bias/">RES-020 · 回测与前视偏差</a> </li> </ul> </section> <section class="aside-card"> <h2>AI 复核记录</h2> <p class="muted"> 本项目没有真人签字；下列状态来自 AI-only 编辑复核。 </p> <ul> <li> 事实与计算 ：AI 复核通过 </li><li> 学科 ：AI 复核通过 </li><li> 英文 ：AI 复核通过 </li><li> 页面 ：AI 复核通过 </li> </ul> </section> <section class="aside-card"> <h2>来源</h2> <div class="source"> <a href="https://doi.org/10.1037/0096-1523.1.3.288" rel="noopener noreferrer" target="_blank">Hindsight is not equal to foresight: The effect of outcome knowledge on judgment under uncertainty</a> <p>Baruch Fischhoff · Journal of Experimental Psychology: Human Perception and Performance, 1(3), 288–299</p> <p>访问：2026-10-30 · 许可：Publisher terms; linked citation only</p> <p>支持论点：知道结果会改变人们对事前可预测性的判断，即事后偏差。</p> </div><div class="source"> <a href="https://www.federalreservehistory.org/essays/stock-market-crash-of-1929" rel="noopener noreferrer" target="_blank">Stock Market Crash of 1929</a> <p>Federal Reserve History · Federal Reserve Bank of St. Louis</p> <p>访问：2026-10-30 · 许可：Copyrighted; site Terms of Use prohibit reproduction (cite-only)</p> <p>支持论点：1929 年股市崩盘使道指市值减半；美联储行动与金本位等因素对随后全球衰退产生了非预期影响。</p> </div><div class="source"> <a href="https://www.federalreservehistory.org/essays/great-recession-of-200709" rel="noopener noreferrer" target="_blank">The Great Recession</a> <p>Federal Reserve History · Federal Reserve Bank of St. Louis</p> <p>访问：2026-10-30 · 许可：Copyrighted; site Terms of Use prohibit reproduction (cite-only)</p> <p>支持论点：2007 年 12 月至 2009 年 6 月的衰退中，美国 GDP 下降约 4.3%；美联储将利率降至零，并使用前瞻指引和资产购买。</p> </div> </section> </aside> </div> </article><script type="module">var e=document.querySelector(`[data-reading-progress] span`),t=document.querySelector(`article`);if(e&&t){let n=()=>{let n=t.offsetTop,r=t.offsetHeight-window.innerHeight,i=r>0?(window.scrollY-n)/r:0;e.style.width=`${Math.min(1,Math.max(0,i))*100}%`};window.addEventListener(`scroll`,n,{passive:!0}),window.addEventListener(`resize`,n),n()}</script>  </main> <footer class="site-footer"> <div class="container footer-inner"> <div class="footer-brand"> <span class="footer-mascot"><img src="/_astro/neutral.Dr5C2SoA.png" width="28" height="28" alt class="mascot" loading="lazy" decoding="async"></span> <div> <strong>巫妖投资 51Invest</strong> <p class="footer-note">非商业免费知识站。每篇标出来源与口径；这里没有投资建议。</p> </div> </div> <nav class="footer-links" aria-label="知识分站"> <a href="https://51invest.com/" data-main-home>首页</a> <a href="https://51invest.com/contents/">内容地图</a> <a href="/glossary/">术语表</a> <a href="/search/">搜索</a> <a href="https://51invest.com/charts/" data-main-link>图表</a> <a href="https://51invest.com/sources/" data-main-link>数据与许可</a> <a href="/">分站首页</a> </nav> </div> </footer> <nav class="mobile-nav" aria-label="知识分站"> <a class="mobile-link" href="https://51invest.com/" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>    <path d="m3 10 9-7 9 7"></path><path d="M5 9v11h14V9"></path><path d="M9 20v-6h6v6"></path>     </svg> <span>首页</span> </a> <a class="mobile-link" href="https://51invest.com/#stations" data-main-home> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>   <rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect>      </svg> <span>知识分站</span> </a> <a class="mobile-link active" href="/" aria-current="page"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>  <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v18H6.5A2.5 2.5 0 0 1 4 18.5z"></path><path d="M4 18.5A2.5 2.5 0 0 1 6.5 16H20"></path>       </svg> <span>分站首页</span> </a> <a class="mobile-link" href="/en/learn/historical-analogies-and-hindsight-bias/" data-language-link="en"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" class>     <path d="M4 5h10"></path><path d="M9 3v2"></path><path d="M6 5c0 5 3 8 8 9"></path><path d="M12 11c-1 4-4 7-8 8"></path><path d="m14 20 4-10 4 10"></path><path d="M15.5 17h5"></path>    </svg> <span>English</span> </a> </nav><script type="module">var e=document.documentElement,t=[`auto`,`light`,`dark`],n=matchMedia(`(prefers-color-scheme: dark)`),r=()=>{let t=e.dataset.themeMode;return t===`light`||t===`dark`?t:`auto`},i=e=>{try{localStorage.setItem(`51invest-theme`,e)}catch{}try{let t=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-theme=${e}; Path=/; Max-Age=31536000; SameSite=Lax${t}`}catch{}},a=e=>{document.querySelectorAll(`[data-theme-toggle]`).forEach(t=>{let n=t.dataset[`label${e[0].toUpperCase()}${e.slice(1)}`];n&&(t.setAttribute(`aria-label`,n),t.setAttribute(`title`,n))})},o=t=>{e.dataset.themeMode=t,e.dataset.theme=t===`auto`?n.matches?`dark`:`light`:t,i(t),a(t)};a(r()),document.querySelectorAll(`[data-theme-toggle]`).forEach(e=>{e.addEventListener(`click`,()=>{let e=t[(t.indexOf(r())+1)%t.length];o(e)})}),n.addEventListener(`change`,()=>{r()===`auto`&&(e.dataset.theme=n.matches?`dark`:`light`)}),document.querySelectorAll(`[data-language-link]`).forEach(e=>{e.addEventListener(`click`,()=>{let t=e.dataset.languageLink;if(t===`zh`||t===`en`){try{localStorage.setItem(`51invest-language`,JSON.stringify(t))}catch{}try{let e=location.protocol===`https:`?`; Secure`:``;document.cookie=`51invest-language=${t}; Path=/; Max-Age=31536000; SameSite=Lax${e}`}catch{}}})});</script> </body> </html>
