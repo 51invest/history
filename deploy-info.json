@@ -1,7 +1,1 @@
-{
-  "site": "history",
-  "domain": "history.51invest.com",
-  "source": "dist/history",
-  "builtAt": "2026-11-25T08:54:01.465Z",
-  "note": "Static GitHub Pages deployment."
-}
+{"site":"history","servedDomain":"history.51invest.com","canonical":"https://history.51invest.com","source":"dist/history","builtAt":"2026-11-26T02:11:46Z","pages":111,"articles":53,"commit":"250e8e6","tag":"release-351-2026-11-26","note":"Static GitHub Pages deployment for the 351 baseline at history.51invest.com."}
